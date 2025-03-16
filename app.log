@@ -1,0 +1,1786 @@
+2025-03-12 00:48:36,217 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 00:48:36,218 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 00:48:36,218 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 00:48:36,223 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 00:54:37,243 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 00:54:37,243 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 00:54:37,243 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 00:54:37,263 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 00:57:00,702 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 00:57:00,702 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 00:57:00,703 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 00:57:00,708 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 00:59:31,040 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 00:59:31,041 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 00:59:31,041 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 00:59:31,047 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 01:00:53,472 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 01:00:53,472 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 01:00:53,473 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 01:00:53,479 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:02:22,634 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:02:22,634 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:02:22,634 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:02:22,643 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:03:12,772 - DEBUG - aiosqlite - executing <function connect.<locals>.connector at 0x000001DDD08A6DE0>
+2025-03-12 23:03:12,779 - DEBUG - aiosqlite - operation <function connect.<locals>.connector at 0x000001DDD08A6DE0> completed
+2025-03-12 23:03:12,780 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DDD08E4C70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DDD07ADD00>, deterministic=True)
+2025-03-12 23:03:12,781 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DDD08E4C70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DDD07ADD00>, deterministic=True) completed
+2025-03-12 23:03:12,781 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DDD08E4C70>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-03-12 23:03:12,782 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DDD08E4C70>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-03-12 23:03:12,783 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DDD08E4C70>)
+2025-03-12 23:03:12,783 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DDD08E4C70>) completed
+2025-03-12 23:03:12,784 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DDD088A4C0>, 'PRAGMA read_uncommitted', [])
+2025-03-12 23:03:12,786 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DDD088A4C0>, 'PRAGMA read_uncommitted', []) completed
+2025-03-12 23:03:12,788 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DDD088A4C0>)
+2025-03-12 23:03:12,788 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DDD088A4C0>) completed
+2025-03-12 23:03:12,790 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DDD088A4C0>)
+2025-03-12 23:03:12,790 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DDD088A4C0>) completed
+2025-03-12 23:03:12,791 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>)
+2025-03-12 23:03:12,791 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>) completed
+2025-03-12 23:03:12,800 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DDD08E4C70>)
+2025-03-12 23:03:12,801 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DDD08E4C70>) completed
+2025-03-12 23:03:12,801 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DDD088A4C0>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users" \nWHERE "Users".username = ?', ('strin',))
+2025-03-12 23:03:12,805 - DEBUG - aiosqlite - returning exception no such column: Users.weight
+2025-03-12 23:03:12,807 - ERROR - fastapi_app - Incorrect credentials: (sqlite3.OperationalError) no such column: Users.weight
+[SQL: SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash 
+FROM "Users" 
+WHERE "Users".username = ?]
+[parameters: ('strin',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-12 23:03:12,808 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>)
+2025-03-12 23:03:12,809 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>) completed
+2025-03-12 23:03:12,809 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>)
+2025-03-12 23:03:12,810 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DDD08E4C70>) completed
+2025-03-12 23:07:46,394 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:07:46,394 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:07:46,396 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:07:46,401 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:08:16,265 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:08:16,266 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:08:16,266 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:08:16,273 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:09:54,067 - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-12 23:09:54,095 - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+2025-03-12 23:09:54,096 - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-03-12 23:09:54,510 - DEBUG - aiosqlite - executing <function connect.<locals>.connector at 0x0000020E43336200>
+2025-03-12 23:09:54,511 - DEBUG - aiosqlite - operation <function connect.<locals>.connector at 0x0000020E43336200> completed
+2025-03-12 23:09:54,512 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000020E433955D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000020E4323DD00>, deterministic=True)
+2025-03-12 23:09:54,512 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000020E433955D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000020E4323DD00>, deterministic=True) completed
+2025-03-12 23:09:54,513 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000020E433955D0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-03-12 23:09:54,514 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000020E433955D0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-03-12 23:09:54,514 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:09:54,515 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:09:54,515 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338C8C0>, 'PRAGMA read_uncommitted', [])
+2025-03-12 23:09:54,515 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338C8C0>, 'PRAGMA read_uncommitted', []) completed
+2025-03-12 23:09:54,516 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338C8C0>)
+2025-03-12 23:09:54,516 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338C8C0>) completed
+2025-03-12 23:09:54,516 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338C8C0>)
+2025-03-12 23:09:54,517 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338C8C0>) completed
+2025-03-12 23:09:54,517 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:09:54,518 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:09:54,521 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:09:54,522 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:09:54,522 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CB40>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('dasha', 1, 169, 19, 'dashka', '$2b$12$n8IWlNw8LHD4ojR9o1RnjusdvvnoN9lZ4nZqvlrdjrnfMWs3sIMQq'))
+2025-03-12 23:09:54,523 - DEBUG - aiosqlite - returning exception table Users has no column named weight
+2025-03-12 23:09:54,524 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:09:54,524 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:09:54,525 - ERROR - fastapi_app - Database error: (sqlite3.OperationalError) table Users has no column named weight
+[SQL: INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('dasha', 1, 169, 19, 'dashka', '$2b$12$n8IWlNw8LHD4ojR9o1RnjusdvvnoN9lZ4nZqvlrdjrnfMWs3sIMQq')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-12 23:09:54,526 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:09:54,526 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:11:05,395 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:11:05,396 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:11:05,397 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D440>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('dasha', 1, 169, 19, 'dashka', '$2b$12$LzAhUGl4J/f9ix4pivH0GuDzbyRTLwhxaxHFd6wyJPLQxcxt8dA7S'))
+2025-03-12 23:11:05,397 - DEBUG - aiosqlite - returning exception table Users has no column named weight
+2025-03-12 23:11:05,398 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:11:05,398 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:11:05,399 - ERROR - fastapi_app - Database error: (sqlite3.OperationalError) table Users has no column named weight
+[SQL: INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('dasha', 1, 169, 19, 'dashka', '$2b$12$LzAhUGl4J/f9ix4pivH0GuDzbyRTLwhxaxHFd6wyJPLQxcxt8dA7S')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-12 23:11:05,400 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:11:05,400 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,356 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,356 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,357 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D740>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:38,357 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D740>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:38,358 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D740>)
+2025-03-12 23:13:38,358 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D740>) completed
+2025-03-12 23:13:38,359 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D740>)
+2025-03-12 23:13:38,359 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D740>) completed
+2025-03-12 23:13:38,367 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,367 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,368 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:13:38,381 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:13:38,383 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:38,383 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:38,384 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,385 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,385 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D940>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:38,386 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D940>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:38,386 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D940>)
+2025-03-12 23:13:38,386 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D940>) completed
+2025-03-12 23:13:38,387 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D940>)
+2025-03-12 23:13:38,387 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D940>) completed
+2025-03-12 23:13:38,388 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,388 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,388 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:13:38,389 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:13:38,389 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:38,390 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:38,390 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:38,390 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:38,391 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,391 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,392 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338DA40>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:13:38,402 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338DA40>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:13:38,403 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338DA40>)
+2025-03-12 23:13:38,403 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338DA40>) completed
+2025-03-12 23:13:38,404 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,404 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:38,405 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:38,405 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,421 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,421 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,422 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CD40>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:45,422 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CD40>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:45,423 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338CD40>)
+2025-03-12 23:13:45,423 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338CD40>) completed
+2025-03-12 23:13:45,424 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CD40>)
+2025-03-12 23:13:45,424 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CD40>) completed
+2025-03-12 23:13:45,426 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,426 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,427 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:13:45,439 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:13:45,440 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,440 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,441 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,441 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,442 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:45,442 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:45,443 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,443 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,444 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,444 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,445 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,445 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,446 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:13:45,446 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:13:45,447 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,448 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,448 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,449 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,450 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,450 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,451 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:13:45,461 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4331A2C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:13:45,462 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>)
+2025-03-12 23:13:45,463 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4331A2C0>) completed
+2025-03-12 23:13:45,464 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,464 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:45,465 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:45,465 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,687 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,687 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,688 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D940>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:46,688 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D940>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:46,688 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D940>)
+2025-03-12 23:13:46,689 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D940>) completed
+2025-03-12 23:13:46,690 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D940>)
+2025-03-12 23:13:46,690 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D940>) completed
+2025-03-12 23:13:46,691 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,692 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,692 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CFC0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:13:46,716 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CFC0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:13:46,717 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CFC0>)
+2025-03-12 23:13:46,717 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CFC0>) completed
+2025-03-12 23:13:46,718 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,719 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,719 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:46,720 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:46,720 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:46,721 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:46,721 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:46,722 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:46,722 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,723 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,723 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CFC0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:13:46,723 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338CFC0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:13:46,724 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338CFC0>)
+2025-03-12 23:13:46,724 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338CFC0>) completed
+2025-03-12 23:13:46,725 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CFC0>)
+2025-03-12 23:13:46,725 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338CFC0>) completed
+2025-03-12 23:13:46,726 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,727 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,727 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D6C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:13:46,737 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D6C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:13:46,738 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D6C0>)
+2025-03-12 23:13:46,738 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D6C0>) completed
+2025-03-12 23:13:46,739 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,739 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:46,739 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:46,741 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,627 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,630 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,631 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338DEC0>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:48,632 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338DEC0>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:48,633 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338DEC0>)
+2025-03-12 23:13:48,633 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338DEC0>) completed
+2025-03-12 23:13:48,635 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338DEC0>)
+2025-03-12 23:13:48,636 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338DEC0>) completed
+2025-03-12 23:13:48,637 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,637 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,638 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:13:48,667 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:13:48,667 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:48,669 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:48,671 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,671 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,672 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D540>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:13:48,672 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D540>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:13:48,672 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D540>)
+2025-03-12 23:13:48,673 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D540>) completed
+2025-03-12 23:13:48,673 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D540>)
+2025-03-12 23:13:48,674 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D540>) completed
+2025-03-12 23:13:48,674 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,674 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,676 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:13:48,676 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:13:48,676 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:48,677 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:48,677 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>)
+2025-03-12 23:13:48,678 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D9C0>) completed
+2025-03-12 23:13:48,679 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,679 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,679 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D6C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:13:48,690 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D6C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:13:48,692 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D6C0>)
+2025-03-12 23:13:48,692 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338D6C0>) completed
+2025-03-12 23:13:48,693 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,693 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:13:48,693 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:13:48,694 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:23,710 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:23,710 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:23,711 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338C440>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('Dasha', 12, 90, 1, 'dasha', '$2b$12$0LuBlVoWjTk3uT6JB5ML8uD5S95O6DE5RLLrKv98CIsaoXEu2dUN2'))
+2025-03-12 23:14:23,726 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338C440>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('Dasha', 12, 90, 1, 'dasha', '$2b$12$0LuBlVoWjTk3uT6JB5ML8uD5S95O6DE5RLLrKv98CIsaoXEu2dUN2')) completed
+2025-03-12 23:14:23,727 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338C440>)
+2025-03-12 23:14:23,728 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000020E4338C440>) completed
+2025-03-12 23:14:23,729 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:23,738 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:23,738 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:23,739 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:25,198 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:25,198 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:25,199 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000020E4338D9C0>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('Dasha', 12, 90, 1, 'dasha', '$2b$12$Mv/lqbsVR0soHQhoRX22Lut9kiDhrI//oPtOS3DvhsQb5FGKS3iTO'))
+2025-03-12 23:14:25,200 - DEBUG - aiosqlite - returning exception UNIQUE constraint failed: Users.username
+2025-03-12 23:14:25,201 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:25,201 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:14:25,202 - ERROR - fastapi_app - Database error: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.username
+[SQL: INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('Dasha', 12, 90, 1, 'dasha', '$2b$12$Mv/lqbsVR0soHQhoRX22Lut9kiDhrI//oPtOS3DvhsQb5FGKS3iTO')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-03-12 23:14:25,203 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>)
+2025-03-12 23:14:25,203 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000020E433955D0>) completed
+2025-03-12 23:16:15,682 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:16:15,683 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:16:15,683 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:16:15,690 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:16:31,333 - DEBUG - aiosqlite - executing <function connect.<locals>.connector at 0x000001D0F2CB4B80>
+2025-03-12 23:16:31,334 - DEBUG - aiosqlite - operation <function connect.<locals>.connector at 0x000001D0F2CB4B80> completed
+2025-03-12 23:16:31,335 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001D0F2CAAF20>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001D0F2BBDD00>, deterministic=True)
+2025-03-12 23:16:31,335 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001D0F2CAAF20>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001D0F2BBDD00>, deterministic=True) completed
+2025-03-12 23:16:31,336 - DEBUG - aiosqlite - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001D0F2CAAF20>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-03-12 23:16:31,336 - DEBUG - aiosqlite - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001D0F2CAAF20>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-03-12 23:16:31,337 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,337 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,337 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9AF40>, 'PRAGMA read_uncommitted', [])
+2025-03-12 23:16:31,338 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9AF40>, 'PRAGMA read_uncommitted', []) completed
+2025-03-12 23:16:31,338 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9AF40>)
+2025-03-12 23:16:31,339 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9AF40>) completed
+2025-03-12 23:16:31,339 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9AF40>)
+2025-03-12 23:16:31,340 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9AF40>) completed
+2025-03-12 23:16:31,340 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,340 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,341 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,341 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,342 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A0C0>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:16:31,343 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A0C0>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:16:31,343 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9A0C0>)
+2025-03-12 23:16:31,343 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9A0C0>) completed
+2025-03-12 23:16:31,344 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A0C0>)
+2025-03-12 23:16:31,344 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A0C0>) completed
+2025-03-12 23:16:31,345 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,346 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,346 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99CC0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:16:31,370 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99CC0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:16:31,371 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99CC0>)
+2025-03-12 23:16:31,371 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99CC0>) completed
+2025-03-12 23:16:31,372 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,372 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,372 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99C40>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:16:31,374 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99C40>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:16:31,375 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99C40>)
+2025-03-12 23:16:31,375 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99C40>) completed
+2025-03-12 23:16:31,376 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99C40>)
+2025-03-12 23:16:31,376 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99C40>) completed
+2025-03-12 23:16:31,378 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,378 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,379 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99CC0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:16:31,379 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99CC0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:16:31,380 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99CC0>)
+2025-03-12 23:16:31,380 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99CC0>) completed
+2025-03-12 23:16:31,381 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99CC0>)
+2025-03-12 23:16:31,381 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99CC0>) completed
+2025-03-12 23:16:31,383 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,383 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,383 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C992C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:16:31,393 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C992C0>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:16:31,395 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C992C0>)
+2025-03-12 23:16:31,395 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C992C0>) completed
+2025-03-12 23:16:31,396 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,396 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:31,397 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:31,397 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,477 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,480 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,480 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9AF40>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:16:33,481 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9AF40>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:16:33,482 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9AF40>)
+2025-03-12 23:16:33,482 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9AF40>) completed
+2025-03-12 23:16:33,482 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9AF40>)
+2025-03-12 23:16:33,482 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9AF40>) completed
+2025-03-12 23:16:33,484 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,484 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,485 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C98DC0>, '\nDROP TABLE "Users"', ())
+2025-03-12 23:16:33,499 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C98DC0>, '\nDROP TABLE "Users"', ()) completed
+2025-03-12 23:16:33,500 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C98DC0>)
+2025-03-12 23:16:33,500 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C98DC0>) completed
+2025-03-12 23:16:33,501 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,501 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,502 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99C40>, 'PRAGMA main.table_info("Users")', ())
+2025-03-12 23:16:33,502 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C99C40>, 'PRAGMA main.table_info("Users")', ()) completed
+2025-03-12 23:16:33,503 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99C40>)
+2025-03-12 23:16:33,503 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C99C40>) completed
+2025-03-12 23:16:33,504 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99C40>)
+2025-03-12 23:16:33,504 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C99C40>) completed
+2025-03-12 23:16:33,505 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,505 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,506 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A1C0>, 'PRAGMA temp.table_info("Users")', ())
+2025-03-12 23:16:33,506 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A1C0>, 'PRAGMA temp.table_info("Users")', ()) completed
+2025-03-12 23:16:33,507 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9A1C0>)
+2025-03-12 23:16:33,507 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2C9A1C0>) completed
+2025-03-12 23:16:33,507 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A1C0>)
+2025-03-12 23:16:33,508 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A1C0>) completed
+2025-03-12 23:16:33,509 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,509 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,509 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A340>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ())
+2025-03-12 23:16:33,519 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2C9A340>, '\nCREATE TABLE "Users" (\n\tid INTEGER NOT NULL, \n\tname VARCHAR, \n\tweight INTEGER, \n\theight INTEGER, \n\tage INTEGER, \n\tusername VARCHAR NOT NULL, \n\tpassword_hash VARCHAR NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (username)\n)\n\n', ()) completed
+2025-03-12 23:16:33,520 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A340>)
+2025-03-12 23:16:33,521 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2C9A340>) completed
+2025-03-12 23:16:33,521 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,522 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:16:33,522 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:16:33,523 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:14,380 - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-12 23:17:14,382 - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+2025-03-12 23:17:14,383 - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-03-12 23:17:14,802 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:14,803 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:14,804 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2CF8840>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('Dashka', 3, 12, 19, 's', '$2b$12$ZevjQ4Tjiy81J7h.91pBqemwZ69FGRmFFndi0p3XayMgSg1LsorsW'))
+2025-03-12 23:17:14,818 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2CF8840>, 'INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES (?, ?, ?, ?, ?, ?)', ('Dashka', 3, 12, 19, 's', '$2b$12$ZevjQ4Tjiy81J7h.91pBqemwZ69FGRmFFndi0p3XayMgSg1LsorsW')) completed
+2025-03-12 23:17:14,820 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2CF8840>)
+2025-03-12 23:17:14,820 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2CF8840>) completed
+2025-03-12 23:17:14,822 - DEBUG - aiosqlite - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:14,834 - DEBUG - aiosqlite - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:14,836 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:14,836 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:31,876 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:31,876 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:31,877 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2CF88C0>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users"', ())
+2025-03-12 23:17:31,877 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2CF88C0>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users"', ()) completed
+2025-03-12 23:17:31,878 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2CF88C0>)
+2025-03-12 23:17:31,878 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2CF88C0>) completed
+2025-03-12 23:17:31,879 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2CF88C0>)
+2025-03-12 23:17:31,879 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2CF88C0>) completed
+2025-03-12 23:17:31,880 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:31,880 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:31,881 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:31,881 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:55,921 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:55,922 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:55,922 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2D223C0>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users" \nWHERE "Users".username = ?', ('s',))
+2025-03-12 23:17:55,923 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2D223C0>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users" \nWHERE "Users".username = ?', ('s',)) completed
+2025-03-12 23:17:55,923 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2D223C0>)
+2025-03-12 23:17:55,923 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2D223C0>) completed
+2025-03-12 23:17:55,924 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2D223C0>)
+2025-03-12 23:17:55,924 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2D223C0>) completed
+2025-03-12 23:17:55,926 - ERROR - fastapi_app - Incorrect credentials: 400: User with this username already exists
+2025-03-12 23:17:55,927 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:55,927 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:55,928 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:55,928 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:58,188 - DEBUG - aiosqlite - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:58,188 - DEBUG - aiosqlite - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:58,189 - DEBUG - aiosqlite - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2D22540>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users" \nWHERE "Users".username = ?', ('s',))
+2025-03-12 23:17:58,189 - DEBUG - aiosqlite - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001D0F2D22540>, 'SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash \nFROM "Users" \nWHERE "Users".username = ?', ('s',)) completed
+2025-03-12 23:17:58,190 - DEBUG - aiosqlite - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2D22540>)
+2025-03-12 23:17:58,191 - DEBUG - aiosqlite - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001D0F2D22540>) completed
+2025-03-12 23:17:58,192 - DEBUG - aiosqlite - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2D22540>)
+2025-03-12 23:17:58,192 - DEBUG - aiosqlite - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D0F2D22540>) completed
+2025-03-12 23:17:58,193 - ERROR - fastapi_app - Incorrect credentials: 400: User with this username already exists
+2025-03-12 23:17:58,194 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:58,194 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:17:58,195 - DEBUG - aiosqlite - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>)
+2025-03-12 23:17:58,195 - DEBUG - aiosqlite - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001D0F2CAAF20>) completed
+2025-03-12 23:21:15,622 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:21:15,622 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:21:15,622 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:21:15,628 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:21:16,653 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:21:16,653 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:21:16,653 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:21:16,658 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:21:28,757 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:21:28,758 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:21:28,758 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:21:28,764 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:24:38,340 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:24:38,340 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:24:38,340 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:24:38,346 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:26:56,621 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:26:56,622 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:26:56,622 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:26:56,631 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:27:01,154 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:27:01,155 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:27:01,155 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:27:01,162 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:28:01,134 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:28:01,135 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:28:01,135 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:28:01,141 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:31:47,964 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:31:47,965 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:31:47,965 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:31:47,972 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:33:23,745 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:33:23,747 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:33:23,747 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:33:23,755 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-12 23:35:41,720 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-12 23:35:41,721 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-12 23:35:41,721 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-12 23:35:41,729 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 12:53:54,790 - INFO - sqlalchemy.engine.Engine - SELECT DATABASE()
+2025-03-14 12:53:54,804 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 12:53:54,807 - INFO - sqlalchemy.engine.Engine - SELECT @@sql_mode
+2025-03-14 12:53:54,807 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 12:53:54,808 - INFO - sqlalchemy.engine.Engine - SELECT @@lower_case_table_names
+2025-03-14 12:53:54,809 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 12:53:54,810 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 12:53:54,811 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-14 12:56:30,175 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 12:56:30,175 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 12:56:30,175 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 12:56:43,299 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 12:56:43,300 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 12:56:43,300 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 12:59:39,903 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 12:59:39,904 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 12:59:39,904 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 12:59:39,912 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:03:46,605 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:03:46,605 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:03:46,606 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:03:46,613 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:06:02,668 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:06:02,669 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:06:02,669 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:06:02,677 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:06:53,014 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:06:53,014 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:06:53,014 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:06:53,020 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:07:10,732 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:07:10,732 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:07:10,732 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:07:10,736 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:07:33,307 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:07:33,307 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:07:33,307 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:07:33,312 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:08:24,498 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:08:24,498 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:08:24,498 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:08:24,504 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:08:40,338 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:08:40,339 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:08:40,339 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:08:40,344 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:09:41,740 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:09:41,740 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:09:41,740 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:09:41,745 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:09:52,427 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:09:52,428 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:09:52,428 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:09:52,438 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:10:06,062 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:10:06,062 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:10:06,063 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:10:06,069 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:10:19,639 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:10:19,640 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:10:19,640 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:10:19,644 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:10:31,137 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:10:31,137 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:10:31,137 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:10:31,142 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:10:56,736 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:10:56,736 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:10:56,737 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:10:56,742 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:11:15,975 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:11:15,975 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:11:15,975 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:11:15,982 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:11:50,334 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:11:50,335 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:11:50,335 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:11:50,340 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:16:19,282 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:16:19,283 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:16:19,283 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:16:19,288 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:16:29,853 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:16:29,853 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:16:29,854 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:16:29,859 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:17:47,281 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:17:47,281 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:17:47,281 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:17:47,288 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:17:47,823 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:17:47,823 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:17:47,823 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:17:47,828 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:18:53,556 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:18:53,556 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:18:53,557 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:18:53,562 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:19:08,439 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:19:08,439 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:19:08,439 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:19:08,445 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:19:22,202 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:19:22,202 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:19:22,202 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:19:22,211 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:19:46,195 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:19:46,196 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:19:46,196 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:19:46,203 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:20:06,624 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:20:06,625 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:20:06,625 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:20:06,631 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:28:41,912 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:28:41,912 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:28:41,912 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 13:28:41,920 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 13:31:02,828 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 13:31:02,828 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 13:31:02,828 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:09:13,346 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:09:13,347 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:09:13,347 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:11:52,395 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:11:52,395 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:11:52,395 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:11:52,400 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:12:00,523 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:12:00,524 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:12:00,524 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:12:06,570 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:12:06,570 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:12:06,570 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:12:06,576 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:12:16,850 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:12:16,852 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:12:16,852 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:12:16,857 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:12:26,031 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:12:26,031 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:12:26,031 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:12:26,037 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:12:58,551 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:12:58,551 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:12:58,552 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:12:58,557 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:16:34,739 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:16:34,739 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:16:34,740 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:16:34,745 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:17:05,585 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:17:05,585 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:17:05,585 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:17:05,591 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:17:14,820 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:17:14,820 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:17:14,820 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:17:14,828 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:18:15,175 - DEBUG - passlib.utils.compat - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-14 14:18:15,176 - DEBUG - passlib.utils.compat - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-14 14:18:15,176 - DEBUG - passlib.utils.compat - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-14 14:18:15,182 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:20:43,051 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:24:13,364 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:24:43,373 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:25:15,374 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:26:01,201 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:26:47,186 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:27:05,487 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:27:36,543 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:27:52,893 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:28:20,693 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:34:27,489 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:34:48,619 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:34:57,456 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:39:52,872 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:43:43,871 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:45:15,848 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:45:39,193 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:45:51,566 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:46:16,066 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:46:47,402 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:47:41,890 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:47:46,032 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:48:12,950 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:49:28,123 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:51:10,966 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:51:30,262 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:56:38,138 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:56:59,683 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:57:23,936 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 14:57:43,411 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 15:03:59,752 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:14:25,516 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:14:51,291 - INFO - sqlalchemy.engine.Engine - SELECT DATABASE()
+2025-03-14 19:14:51,292 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:14:51,294 - INFO - sqlalchemy.engine.Engine - SELECT @@sql_mode
+2025-03-14 19:14:51,295 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:14:51,296 - INFO - sqlalchemy.engine.Engine - SELECT @@lower_case_table_names
+2025-03-14 19:14:51,296 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:14:51,298 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:14:51,299 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:14:51,300 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:14:51,308 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:14:51,308 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:14:51,310 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:15:39,154 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:15:39,154 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:39,155 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:39,157 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:39,158 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:39,160 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:15:40,121 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:15:40,122 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:40,123 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:40,125 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:40,127 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:40,134 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:15:46,422 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:15:46,423 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:46,423 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:46,426 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:15:46,427 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:15:46,429 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:16:29,961 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:16:37,704 - INFO - sqlalchemy.engine.Engine - SELECT DATABASE()
+2025-03-14 19:16:37,705 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:16:37,706 - INFO - sqlalchemy.engine.Engine - SELECT @@sql_mode
+2025-03-14 19:16:37,708 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:16:37,709 - INFO - sqlalchemy.engine.Engine - SELECT @@lower_case_table_names
+2025-03-14 19:16:37,710 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:16:37,712 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:16:37,714 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:16:37,714 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:16:37,720 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:16:37,721 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:16:37,724 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:18:42,703 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:18:56,539 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:22:58,539 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:23:17,800 - INFO - sqlalchemy.engine.Engine - SELECT DATABASE()
+2025-03-14 19:23:17,801 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:23:17,802 - INFO - sqlalchemy.engine.Engine - SELECT @@sql_mode
+2025-03-14 19:23:17,803 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:23:17,804 - INFO - sqlalchemy.engine.Engine - SELECT @@lower_case_table_names
+2025-03-14 19:23:17,804 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:23:17,807 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:23:17,807 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:23:17,808 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:23:17,813 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:23:17,814 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:23:17,817 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:24:54,040 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:28:10,312 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:36:56,937 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:38:25,951 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:38:48,936 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:38:48,937 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:38:48,937 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:38:48,939 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:38:48,941 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:38:48,942 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:37,302 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:37,302 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:37,302 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:37,305 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:37,306 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:37,308 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:42,789 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:42,791 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:42,791 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:42,792 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:42,796 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:42,798 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:43,567 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:43,570 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:43,571 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:43,572 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:43,572 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:43,574 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:44,260 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:44,261 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:44,262 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:44,263 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:44,264 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:44,265 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,013 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,014 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,014 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,016 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,017 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,018 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,166 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,166 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,167 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,170 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,170 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,171 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,316 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,317 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,317 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,319 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,320 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,321 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,497 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,497 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,497 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,498 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,499 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,500 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,689 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,689 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,690 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,691 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,691 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,692 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:42:45,927 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 19:42:45,927 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,928 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,929 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 19:42:45,929 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 19:42:45,930 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 19:45:19,131 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:45:19,734 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:45:39,783 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:45:46,514 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:45:49,503 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 19:47:37,992 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:00:27,051 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:00:54,409 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:01:12,009 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:02:08,122 - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-14 22:02:08,159 - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+2025-03-14 22:02:08,170 - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-03-14 22:02:08,541 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:02:08,543 - INFO - sqlalchemy.engine.Engine - INSERT INTO `Users` (name, weight, height, age, username, password_hash) VALUES (%s, %s, %s, %s, %s, %s)
+2025-03-14 22:02:08,544 - INFO - sqlalchemy.engine.Engine - [generated in 0.00051s] ('Kirill', 90, 185, 0, 'k', '$2b$12$gs1dRy7PgBvcGj9A20GUjOCPpxBaSlkZdvxHOuhutw7LVgjOv45uW')
+2025-03-14 22:02:08,547 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:03:23,889 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:04:16,932 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:04:28,685 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:04:28,686 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:04:28,686 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:04:28,687 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:04:28,688 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:04:28,690 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:08:56,116 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:08:56,215 - DEBUG - asyncio - Using proactor: IocpProactor
+2025-03-14 22:09:34,025 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:09:34,100 - DEBUG - asyncio - Using proactor: IocpProactor
+2025-03-14 22:09:44,835 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:09:44,911 - DEBUG - asyncio - Using proactor: IocpProactor
+2025-03-14 22:10:07,539 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:10:07,609 - DEBUG - asyncio - Using proactor: IocpProactor
+2025-03-14 22:10:07,619 - DEBUG - aiomysql - caching sha2: succeeded by fast path.
+2025-03-14 22:10:07,635 - INFO - sqlalchemy.engine.Engine - SELECT DATABASE()
+2025-03-14 22:10:07,635 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:07,636 - INFO - sqlalchemy.engine.Engine - SELECT @@sql_mode
+2025-03-14 22:10:07,636 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:07,637 - INFO - sqlalchemy.engine.Engine - SELECT @@lower_case_table_names
+2025-03-14 22:10:07,637 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:07,637 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:10:07,638 - INFO - sqlalchemy.engine.Engine - SELECT 1
+2025-03-14 22:10:07,638 - INFO - sqlalchemy.engine.Engine - [generated in 0.00030s] ()
+2025-03-14 22:10:07,638 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:10:34,278 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:10:34,279 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:34,280 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:34,283 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:34,283 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:34,284 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:10:36,735 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:10:36,736 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:36,736 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:36,738 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:36,738 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:36,739 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:10:37,760 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:10:37,761 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:37,761 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:37,763 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:37,764 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:37,765 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:10:38,586 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:10:38,587 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:38,587 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:38,589 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:10:38,590 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:10:38,591 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:12:12,712 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:12:49,384 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:15:04,517 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:15:21,161 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:15:21,163 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:15:21,163 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:15:21,165 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:15:21,165 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:15:21,167 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:15:22,665 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:15:22,666 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:15:22,666 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:15:22,668 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:15:22,668 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:15:22,670 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:17:32,915 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:18:13,326 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:19:43,709 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:19:59,597 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:19:59,598 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:19:59,599 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:19:59,601 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:19:59,602 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:19:59,604 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:20:01,258 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:20:01,259 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:20:01,259 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:20:01,260 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:20:01,260 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:20:01,262 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:22:51,333 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:23:12,575 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:24:37,404 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:25:02,804 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:25:02,806 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:25:02,806 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:25:02,807 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:25:02,807 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:25:02,809 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:27:47,660 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:29:05,030 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:29:21,372 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:29:37,958 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:35:12,606 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:35:29,879 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:35:29,879 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:35:29,880 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:35:29,883 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:35:29,883 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:35:29,884 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:35:31,420 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 22:35:31,421 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:35:31,421 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:35:31,423 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 22:35:31,423 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 22:35:31,425 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 22:35:57,072 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:48:27,303 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:55:47,142 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:56:24,081 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:56:33,501 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:57:02,565 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:57:44,674 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:58:04,326 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:58:10,619 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:58:19,131 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:58:27,374 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 22:59:43,058 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:00:06,648 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:00:24,185 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:00:58,401 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:01:46,973 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:03:43,557 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:03:56,948 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 23:03:56,948 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:03:56,948 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:03:56,951 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:03:56,951 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:03:56,952 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 23:03:58,426 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 23:03:58,427 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:03:58,428 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:03:58,429 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:03:58,430 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:03:58,431 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 23:04:43,268 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:04:44,043 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:06:07,772 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:06:21,148 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-14 23:06:29,727 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 23:06:29,728 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:06:29,729 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:06:29,731 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:06:29,731 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:06:29,732 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-14 23:06:30,946 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-14 23:06:30,947 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:06:30,947 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:06:30,948 - INFO - sqlalchemy.engine.Engine - DESCRIBE `users`.`Users`
+2025-03-14 23:06:30,949 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-14 23:06:30,950 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-15 03:14:22,035 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-15 03:14:40,241 - DEBUG - aiomysql - caching sha2: Trying full auth...
+2025-03-15 03:14:40,241 - DEBUG - aiomysql - -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0RF4zjBOBjdRchtKVHv
+4yNM55LYWiwS19K7MWcYB0f+Y/0vWXULJB363CwPhvbxZ3UzvRYCXu6ol3dAgxFe
+ZxATbH9qdhsFlI+jnc77QFTZ2BZoqZnMY+59+om/TGgEhdtzE2C14EBPDx3+yjoe
+KJRxeMhAf+ZTAla05d9jVjEljbbz4uEUYA3QFdsTboR6leGqwqqpiV2A+kaKwlXp
+L+rv116vVY2oovPAggSzI4uCLZ21j+wJmlnStsIcq/p/zT6NFtT92/AdvdRBrHUE
+l1t82FfgDWw5UfubGOMO6Jso5AOYjd2vEi7j46zghyYS/vKAVi5AsWyA+7c1WK5Z
+dwIDAQAB
+-----END PUBLIC KEY-----
+
+2025-03-15 03:14:40,273 - ERROR - root - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-15 03:14:40,599 - ERROR - root - Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\src\models\database.py", line 25, in setup_database
+    async with engine.begin() as conn:
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 1064, in begin
+    async with conn:
+               ^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\base.py", line 121, in __aenter__
+    return await self.start(is_ctxmanager=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 274, in start
+    await greenlet_spawn(self.sync_engine.connect)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2439, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-03-15 03:14:42,760 - DEBUG - aiomysql - caching sha2: Trying full auth...
+2025-03-15 03:14:42,761 - DEBUG - aiomysql - -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0RF4zjBOBjdRchtKVHv
+4yNM55LYWiwS19K7MWcYB0f+Y/0vWXULJB363CwPhvbxZ3UzvRYCXu6ol3dAgxFe
+ZxATbH9qdhsFlI+jnc77QFTZ2BZoqZnMY+59+om/TGgEhdtzE2C14EBPDx3+yjoe
+KJRxeMhAf+ZTAla05d9jVjEljbbz4uEUYA3QFdsTboR6leGqwqqpiV2A+kaKwlXp
+L+rv116vVY2oovPAggSzI4uCLZ21j+wJmlnStsIcq/p/zT6NFtT92/AdvdRBrHUE
+l1t82FfgDWw5UfubGOMO6Jso5AOYjd2vEi7j46zghyYS/vKAVi5AsWyA+7c1WK5Z
+dwIDAQAB
+-----END PUBLIC KEY-----
+
+2025-03-15 03:14:42,774 - ERROR - root - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-15 03:14:42,780 - ERROR - root - Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\src\models\database.py", line 25, in setup_database
+    async with engine.begin() as conn:
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 1064, in begin
+    async with conn:
+               ^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\base.py", line 121, in __aenter__
+    return await self.start(is_ctxmanager=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 274, in start
+    await greenlet_spawn(self.sync_engine.connect)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2439, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-03-15 03:14:46,072 - DEBUG - aiomysql - caching sha2: Trying full auth...
+2025-03-15 03:14:46,075 - DEBUG - aiomysql - -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0RF4zjBOBjdRchtKVHv
+4yNM55LYWiwS19K7MWcYB0f+Y/0vWXULJB363CwPhvbxZ3UzvRYCXu6ol3dAgxFe
+ZxATbH9qdhsFlI+jnc77QFTZ2BZoqZnMY+59+om/TGgEhdtzE2C14EBPDx3+yjoe
+KJRxeMhAf+ZTAla05d9jVjEljbbz4uEUYA3QFdsTboR6leGqwqqpiV2A+kaKwlXp
+L+rv116vVY2oovPAggSzI4uCLZ21j+wJmlnStsIcq/p/zT6NFtT92/AdvdRBrHUE
+l1t82FfgDWw5UfubGOMO6Jso5AOYjd2vEi7j46zghyYS/vKAVi5AsWyA+7c1WK5Z
+dwIDAQAB
+-----END PUBLIC KEY-----
+
+2025-03-15 03:14:46,084 - ERROR - root - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-15 03:14:46,094 - ERROR - root - Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\src\models\database.py", line 25, in setup_database
+    async with engine.begin() as conn:
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 1064, in begin
+    async with conn:
+               ^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\base.py", line 121, in __aenter__
+    return await self.start(is_ctxmanager=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 274, in start
+    await greenlet_spawn(self.sync_engine.connect)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2439, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-03-15 09:26:05,179 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-15 09:26:18,681 - DEBUG - aiomysql - caching sha2: Trying full auth...
+2025-03-15 09:26:18,682 - DEBUG - aiomysql - -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0RF4zjBOBjdRchtKVHv
+4yNM55LYWiwS19K7MWcYB0f+Y/0vWXULJB363CwPhvbxZ3UzvRYCXu6ol3dAgxFe
+ZxATbH9qdhsFlI+jnc77QFTZ2BZoqZnMY+59+om/TGgEhdtzE2C14EBPDx3+yjoe
+KJRxeMhAf+ZTAla05d9jVjEljbbz4uEUYA3QFdsTboR6leGqwqqpiV2A+kaKwlXp
+L+rv116vVY2oovPAggSzI4uCLZ21j+wJmlnStsIcq/p/zT6NFtT92/AdvdRBrHUE
+l1t82FfgDWw5UfubGOMO6Jso5AOYjd2vEi7j46zghyYS/vKAVi5AsWyA+7c1WK5Z
+dwIDAQAB
+-----END PUBLIC KEY-----
+
+2025-03-15 09:26:18,734 - ERROR - root - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-15 09:26:18,753 - ERROR - root - Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\src\models\database.py", line 25, in setup_database
+    async with engine.begin() as conn:
+               ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 1064, in begin
+    async with conn:
+               ^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\base.py", line 121, in __aenter__
+    return await self.start(is_ctxmanager=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 274, in start
+    await greenlet_spawn(self.sync_engine.connect)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2439, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 270, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 75, in _connect
+    await conn._connect()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 540, in _connect
+    await self._request_authentication()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 865, in _request_authentication
+    await self.caching_sha2_password_auth(auth_packet)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 989, in caching_sha2_password_auth
+    pkt = await self._read_packet()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-03-15 11:30:40,320 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:13:00,206 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:15:23,049 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:15:37,751 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:16:26,778 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:16:42,791 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:17:12,683 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:17:26,915 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:18:01,452 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:21:05,737 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:21:21,414 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 02:21:33,465 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-03-16 02:21:33,472 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 02:21:33,476 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-03-16 02:21:33,476 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 02:21:33,476 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-03-16 02:21:33,476 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 02:21:33,480 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 02:21:33,480 - INFO - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-03-16 02:21:33,480 - INFO - sqlalchemy.engine.Engine - [generated in 0.00146s] ('Users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-03-16 02:21:33,496 - INFO - sqlalchemy.engine.Engine - 
+CREATE TABLE "Users" (
+	id SERIAL NOT NULL, 
+	name VARCHAR(255) NOT NULL, 
+	weight INTEGER NOT NULL, 
+	height INTEGER NOT NULL, 
+	age INTEGER NOT NULL, 
+	username VARCHAR(50) NOT NULL, 
+	password_hash VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (username)
+)
+
+
+2025-03-16 02:21:33,496 - INFO - sqlalchemy.engine.Engine - [no key 0.00161s] ()
+2025-03-16 02:21:33,538 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 02:21:45,724 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 02:21:45,727 - INFO - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-03-16 02:21:45,728 - INFO - sqlalchemy.engine.Engine - [cached since 12.24s ago] ('Users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-03-16 02:21:45,730 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 02:22:34,170 - WARNING - passlib.handlers.bcrypt - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\kirill\PycharmProjects\PythonFastapiTraining\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-16 02:22:34,208 - DEBUG - passlib.handlers.bcrypt - detected 'bcrypt' backend, version '<unknown>'
+2025-03-16 02:22:34,218 - DEBUG - passlib.handlers.bcrypt - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-03-16 02:22:34,638 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 02:22:34,641 - INFO - sqlalchemy.engine.Engine - INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES ($1::VARCHAR, $2::INTEGER, $3::INTEGER, $4::INTEGER, $5::VARCHAR, $6::VARCHAR) RETURNING "Users".id
+2025-03-16 02:22:34,641 - INFO - sqlalchemy.engine.Engine - [generated in 0.00074s] ('Dasha', 1, 169, 18, 'Dashka', '$2b$12$9xjvpLKNpp69DFR9OBLuVeglB8Wc.tnu7qD8dEll4TkLuPerbLEKW')
+2025-03-16 02:22:34,648 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 02:22:37,761 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 02:22:37,761 - INFO - sqlalchemy.engine.Engine - INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES ($1::VARCHAR, $2::INTEGER, $3::INTEGER, $4::INTEGER, $5::VARCHAR, $6::VARCHAR) RETURNING "Users".id
+2025-03-16 02:22:37,761 - INFO - sqlalchemy.engine.Engine - [cached since 3.122s ago] ('Dasha', 1, 169, 18, 'Dashka', '$2b$12$./ux82FGr53/nO4MXNeps.Gy5hk1F9aikEEyWgH1A304GcVritAHq')
+2025-03-16 02:22:37,761 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-03-16 02:34:26,461 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 02:34:26,461 - INFO - sqlalchemy.engine.Engine - INSERT INTO "Users" (name, weight, height, age, username, password_hash) VALUES ($1::VARCHAR, $2::INTEGER, $3::INTEGER, $4::INTEGER, $5::VARCHAR, $6::VARCHAR) RETURNING "Users".id
+2025-03-16 02:34:26,461 - INFO - sqlalchemy.engine.Engine - [cached since 711.8s ago] ('Kirill', 90, 185, 19, 'k', '$2b$12$jz8lYUBuu0sDKEpXmJQBjeB3bHhghmgGDoY9PykmZYrKIoiFDdETm')
+2025-03-16 02:34:26,467 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 11:39:37,537 - DEBUG - passlib.registry - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-16 11:40:41,858 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-03-16 11:40:41,859 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 11:40:41,859 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-03-16 11:40:41,859 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 11:40:41,864 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-03-16 11:40:41,864 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-03-16 11:40:41,867 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 11:40:41,880 - INFO - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-03-16 11:40:41,880 - INFO - sqlalchemy.engine.Engine - [generated in 0.00344s] ('Users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-03-16 11:40:41,898 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 11:40:44,297 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 11:40:44,298 - INFO - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-03-16 11:40:44,300 - INFO - sqlalchemy.engine.Engine - [cached since 2.432s ago] ('Users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-03-16 11:40:44,314 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-03-16 11:40:59,301 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-03-16 11:40:59,317 - INFO - sqlalchemy.engine.Engine - SELECT "Users".id, "Users".name, "Users".weight, "Users".height, "Users".age, "Users".username, "Users".password_hash 
+FROM "Users"
+2025-03-16 11:40:59,317 - INFO - sqlalchemy.engine.Engine - [generated in 0.00069s] ()
+2025-03-16 11:40:59,335 - INFO - sqlalchemy.engine.Engine - ROLLBACK
