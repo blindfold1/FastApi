@@ -1,3 +1,6 @@
-from .token import auth_router
+from .authorization import login_router
 
-__all__ = ["auth_router"]  # Экспорт роутера аутентификации
+
+__all__ = [
+    "login_router",
+]

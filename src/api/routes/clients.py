@@ -1,108 +1,115 @@
 import jwt
-from sqlalchemy import select, delete, or_
+from pydantic import EmailStr
+from sqlalchemy import select
 from sqlalchemy.exc import SQLAlchemyError
-from fastapi import HTTPException, Depends, APIRouter
+from fastapi import HTTPException, Depends, APIRouter, Body, Path, status
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.sql.functions import user
 
-from src.api.auth.token import SECRET_KEY, ALGORITHM, oauth2_scheme
-from src.api.dependencies import SessionDep, pwd_context
-from src.config import logger
-from src.models.model import Users
-from src.pydantic_models import User_Schema, Updated_User_Schema
+from src.core.security import AuthHandler, oauth2_scheme
+from src.core.config import settings, logger
+from src.db.database import get_db
+from src.db.dependencies import SessionDep
+from src.models.user import Users
+from src.schemas.pydantic_models import UserCreate, UserUpdate, UserResponse
 
 clients_router = APIRouter(prefix="/clients", tags=["Clients"])
+auth_handler = AuthHandler()
 
 
 
-@clients_router.post("/users")
-async def create_user(data: User_Schema, db: AsyncSession = Depends(SessionDep)):
-    try:
-        hashed_password = pwd_context.hash(data.password)
-        new_user = Users(
-            name=data.name,
-            weight=data.weight,
-            height=data.height,
-            age=data.age,
-            username=data.username,
-            password_hash=hashed_password
-        )
-        db.add(new_user)
-        await db.commit()
-        return {"Success": True}
-    except SQLAlchemyError as error:
-        logger.error(f"Database error: {error}")
-        await db.rollback()
-        raise HTTPException(status_code=500, detail="Internal server error")
-    except Exception as error:
-        logger.error(f"Unexpected error: {error}")
-        raise HTTPException(status_code=500, detail="Internal server error")
-
-
-@clients_router.get("/users")
-async def get_users(db: AsyncSession = Depends(SessionDep)):
-    try:
-        result = await db.execute(select(Users))  # ✅ Используем `db`
-        users = result.scalars().all()
-        return users
-    except SQLAlchemyError as error:
-        logger.error(f"No users found: {error}")
-        raise HTTPException(status_code=500, detail="Internal server error")
-
-@clients_router.get("/me", response_model=User_Schema)
-async def get_current_user(
-        token: str = Depends(oauth2_scheme),
-        db: AsyncSession = Depends(SessionDep)
+@clients_router.post("/users", response_model=UserResponse)
+async def create_user(
+        data: UserCreate = Body(
+            ...,
+            example={
+                "username": "john_doe",
+                "name": "John",
+                "weight": 70,
+                "height": 180,
+                "age": 25,
+                "password": "secret"
+            }
+        ),
+        db: AsyncSession = Depends(get_db)
 ):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username = payload.get("sub")
-        if not username:
-            raise HTTPException(status_code=401, detail="Unauthorized", headers={"WWW-Authenticate": "Bearer"})
-    except jwt.PyJWTError:
-        raise HTTPException(status_code=401, detail="Unauthorized", headers={"WWW-Authenticate": "Bearer"})
+        hashed_password = auth_handler.get_password_hash(data.password)
+        new_user = Users(**data.model_dump(exclude={"password"}),password_hash=hashed_password)
+
+        db.add(new_user)
+        await db.commit()
+        await db.refresh(new_user)
+
+        return UserResponse(
+            id=new_user.id,
+            name=new_user.name,
+            weight=new_user.weight,
+            height=new_user.height,
+            age=new_user.age,
+            username=new_user.username,
+
+            is_active=new_user.is_active
+        )
+    except Exception as e:
+        logger.error(f"Error creating user: {e}")
+        await db.rollback()
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
 
-    result = await db.execute(select(Users).filter(Users.username == username))
-    user = result.scalars().first()
 
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+@clients_router.get("/users", response_model=list[UserResponse])
+async def get_users(db: AsyncSession = Depends(get_db)):
+    try:
+        result = await db.execute(select(Users))
+        users = result.scalars().all()
+        return [UserResponse.model_validate(user) for user in users]
+    except SQLAlchemyError as error:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
-    return user
 
-@clients_router.put("/update", response_model=User_Schema)
-async def update_user(user_id:int,updated_data: Updated_User_Schema, db: AsyncSession = Depends(SessionDep)):
+@clients_router.put("/users/{user_id}", response_model=UserResponse)
+async def update_user(
+        user_id: int = Path(..., description="ID пользователя"),
+        updated_data: UserUpdate = Body(..., description="Новые данные"),
+        db: AsyncSession = Depends(get_db)
+):
     try:
         result = await db.execute(select(Users).filter(Users.id == user_id))
+        user = result.scalars().first()
+        if not user:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
 
-        updated_user = result.scalars().first()
-
-        updated_data = updated_data.dict(exclude_unset=True)
-        for age, weight in updated_data.items():
-            setattr(updated_user, age, weight)
+        for key, value in updated_data.dict(exclude_unset=True).items():
+            setattr(user, key, value)
 
         await db.commit()
-        await db.refresh(updated_user)
-
+        await db.refresh(user)
+        return UserResponse.model_validate(user)
     except SQLAlchemyError as error:
+        await db.rollback()
         logger.error(f"Database error: {error}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
-    return updated_user
 
-@clients_router.delete("/delete", response_model = User_Schema)
-async def delete_user(user_id:int,user_name:str, db: AsyncSession = Depends(SessionDep)):
+@clients_router.delete("/users/{user_id}", response_model=UserResponse)
+async def delete_user(
+        user_id: int = Path(..., description="ID пользователя"),
+        db: AsyncSession = Depends(get_db)
+):
     try:
         result = await db.execute(select(Users).filter(Users.id == user_id))
-        user_for_delete = result.scalars().first()
-        if not user_for_delete:
-            raise HTTPException(status_code=404, detail="User not found")
+        user = result.scalars().first()
+        if not user:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
 
-        await db.execute(delete(Users).where(or_(Users.id == user_id, Users.name == user_name)))
+        await db.delete(user)
         await db.commit()
+        return UserResponse.model_validate(user)
     except SQLAlchemyError as error:
+        await db.rollback()
         logger.error(f"Database error: {error}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
-    return user
+@clients_router.get("/")
+def test_schema():
+    return UserCreate.model_json_schema()
