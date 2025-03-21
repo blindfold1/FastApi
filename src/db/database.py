@@ -41,7 +41,7 @@ async def setup_database():
             detail="Database creation failed"
 
         )
-# src/db/database.py
+
 async def get_db() -> AsyncSession:
     async with AsyncSessionLocal() as session:
-        yield session  # ✅ Корректный генератор сессии
+        yield session

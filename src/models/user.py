@@ -1,7 +1,10 @@
 from typing import Any
 
+from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String, Integer, Boolean, select, Column
+
+from src.core.config import logger
 from src.db.database import Base
 
 class Users(Base):
@@ -18,19 +21,19 @@ class Users(Base):
     scopes: Mapped[str] = mapped_column(String(255), default="me")
 
 
-
-
-    @classmethod
-    async def authenticate(cls, db, username: str, password: str):
-        from src.core.security import AuthHandler  # Ленивый импорт
-        user = await cls.get_by_username(db, username)
+    async def authenticate(db: AsyncSession, username: str, password: str):
+        from src.core.security import AuthHandler
+        user = await Users.get_by_username(db, username)
         if not user:
             return None
         if not AuthHandler().verify_password(password, user.password_hash):
             return None
         return user
 
-    @classmethod
-    async def get_by_username(cls, db, username: str):
-        result = await db.execute(select(cls).where(cls.username == username))
-        return result.scalars().first()
+
+    async def get_by_username(db: AsyncSession, username: str):
+        result = await db.execute(select(Users).where(Users.username == username))
+        user = result.scalars().first()
+        if user is None:
+            logger.warning(f"Пользователь {username} не найден")
+        return user

@@ -1,27 +1,38 @@
 from pathlib import Path
-
 from fastapi import FastAPI
-from fastapi.responses import FileResponse  # Добавьте этот импорт
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.responses import HTMLResponse
 
-from src.api.routes.clients import  clients_router
-from src.db.database import  database_router
-from src.api.routes.auth import auth_router
+from src.api.routes import router  # Импорт основного роутера
+from src.db.database import database_router
 
-app = FastAPI()
+app = FastAPI(
+    title = "MyApi",
+    description= "Gymbro",
+    docs_url = "/docs",
+    openapi_url = "/openapi.json",
+    swagger_ui_parameters={
+        "favicon":"/static/favicon.ico",
+    }
+)
 
-# Подключите роутеры
-app.include_router(clients_router)
+
+
+
+app.include_router(router)
 app.include_router(database_router)
-app.include_router(auth_router)
 
-static_path = Path(__file__).parent / "static"
-app.mount("/static", StaticFiles(directory=static_path), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+@app.get("/", response_class=HTMLResponse)
+async def read_root():
+    with open("static/index.html", "r") as f:
+        return f.read()
 
-# Обработка favicon.ico
-@app.get("/favicon.ico")
-async def get_favicon():
-    return FileResponse("static/favicon.ico")
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+@app.get("/", response_class=HTMLResponse)
+async def read_root():
+    with open("static/index.html", "r") as f:
+        return f.read()
+
+
+

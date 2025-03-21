@@ -1,11 +1,10 @@
 import jwt
-from pydantic import EmailStr
 from sqlalchemy import select
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException, Depends, APIRouter, Body, Path, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.core.security import AuthHandler, oauth2_scheme
+from src.core.security import AuthHandler, oauth2_scheme, auth_handler
 from src.core.config import settings, logger
 from src.db.database import get_db
 from src.db.dependencies import SessionDep
@@ -13,28 +12,29 @@ from src.models.user import Users
 from src.schemas.pydantic_models import UserCreate, UserUpdate, UserResponse
 
 clients_router = APIRouter(prefix="/clients", tags=["Clients"])
-auth_handler = AuthHandler()
+
 
 
 
 @clients_router.post("/users", response_model=UserResponse)
 async def create_user(
-        data: UserCreate = Body(
-            ...,
-            example={
-                "username": "john_doe",
-                "name": "John",
-                "weight": 70,
-                "height": 180,
-                "age": 25,
-                "password": "secret"
-            }
-        ),
+        data: UserCreate = Body(...),
         db: AsyncSession = Depends(get_db)
 ):
     try:
+        # Проверка на существование пользователя
+        existing_user = await Users.get_by_username(db, data.username)
+        if existing_user:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Имя пользователя уже существует")
+
+        # Проверка, что пароль передан
+        if not data.password:
+            logger.error("Password not provided in request")
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Password is required")
+
+        # Хеширование пароля
         hashed_password = auth_handler.get_password_hash(data.password)
-        new_user = Users(**data.model_dump(exclude={"password"}),password_hash=hashed_password)
+        new_user = Users(**data.model_dump(exclude={"password"}), password_hash=hashed_password)
 
         db.add(new_user)
         await db.commit()
@@ -47,16 +47,14 @@ async def create_user(
             height=new_user.height,
             age=new_user.age,
             username=new_user.username,
-
             is_active=new_user.is_active
         )
+    except HTTPException as e:
+        raise e
     except Exception as e:
-        logger.error(f"Error creating user: {e}")
+        logger.error(f"Ошибка при создании пользователя: {e}")
         await db.rollback()
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
-
-
-
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Внутренняя ошибка сервера")
 @clients_router.get("/users", response_model=list[UserResponse])
 async def get_users(db: AsyncSession = Depends(get_db)):
     try:

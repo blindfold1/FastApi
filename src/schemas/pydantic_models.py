@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
 class UserBase(BaseModel):
@@ -13,9 +13,11 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     password: str
 
+
 class UserResponse(UserBase):
     id: int
     is_active: bool = True
+    model_config = ConfigDict(from_attributes=True)
 
 class UserUpdate(BaseModel):
     name: Optional[str] = None
@@ -27,3 +29,4 @@ class UserUpdate(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str
+    refresh_token: str

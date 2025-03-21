@@ -2,13 +2,13 @@ from datetime import timedelta
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession
-from src.core.security import AuthHandler
+from src.core.security import AuthHandler, auth_handler
 from src.db.dependencies import get_db
 from src.models.user import Users
-from src.schemas.pydantic_models import Token
+from src.schemas.pydantic_models import Token, UserResponse
 
 auth_router = APIRouter(tags=["Authentication"])
-auth_handler = AuthHandler()
+
 
 @auth_router.post("/token", response_model=Token)
 async def login(
@@ -27,10 +27,21 @@ async def login(
         expires_delta=timedelta(minutes=15)
     )
 
-    return {"access_token": access_token, "token_type": "bearer"}
+    refresh_token  = auth_handler.create_refresh_token(
+    data={"sub": user.username},
+    expires_delta=timedelta(days=30)
+)
 
-@auth_router.get("/me")
+    return {
+        "access_token": access_token,
+        "token_type": "bearer",
+        "refresh_token": refresh_token,
+            }
+
+
+
+@auth_router.get("/me", response_model=UserResponse)
 async def read_me(
     current_user: Users = Depends(auth_handler.get_current_user)
 ):
-    return current_user
+    return UserResponse.model_validate(current_user)

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 
-from src.api.routes.auth import  auth_router
+from src.api.routes.author import  auth_router
 from src.api.routes.clients import clients_router
 from src.db.database import database_router
 
