@@ -12,3 +12,4 @@
 2025-03-20 16:47:03,622 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
 2025-03-20 17:06:22,417 - WARNING - src.core.config - Пользователь kir не найден
 2025-03-20 17:13:58,640 - WARNING - src.core.config - Пользователь dashka не найден
+2025-03-22 13:13:55,402 - WARNING - backend.src.core.config - Пользователь admin не найден

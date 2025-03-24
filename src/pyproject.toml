@@ -1,6 +1,0 @@
-[tool.poetry]
-name = "src"
-version = "0.1.0"
-packages = [
-    {include = "src"}
-]
