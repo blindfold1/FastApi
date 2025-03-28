@@ -1,4 +1,4 @@
-from backend.src.models.user import Users
+from backend.src.models.tables import Users
 
 
 async def authenticate_user(self, db, username: str, password: str):
@@ -6,6 +6,7 @@ async def authenticate_user(self, db, username: str, password: str):
     if not user or not self.auth_handler.verify_password(password, user.password_hash):
         return None
     return user
+
 
 async def get_current_user(self, db, token: str):
     try:

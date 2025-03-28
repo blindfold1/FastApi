@@ -1,14 +1,5 @@
 from .config import settings  # Импорт настроек
-from .security import (      # Импорт компонентов безопасности
-    AuthHandler,
-    oauth2_scheme,
-    pwd_context
-)
+from .security import AuthHandler, pwd_context  # Импорт компонентов безопасности
 
 # Определяем публичный API модуля
-__all__ = [
-    "settings",
-    "AuthHandler",
-    "oauth2_scheme",
-    "pwd_context"
-]
+__all__ = ["settings", "AuthHandler", "pwd_context"]

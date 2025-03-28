@@ -1,15 +1,8 @@
-2025-03-20 15:01:27,225 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:08:45,969 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:25:35,303 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:25:36,183 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:25:36,373 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:26:43,718 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:36:48,583 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 15:48:43,525 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 16:30:18,290 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 16:30:48,328 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 16:44:15,428 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 16:47:03,622 - ERROR - src.core.config - Error creating user: AuthHandler.get_password_hash() missing 1 required positional argument: 'password'
-2025-03-20 17:06:22,417 - WARNING - src.core.config - Пользователь kir не найден
-2025-03-20 17:13:58,640 - WARNING - src.core.config - Пользователь dashka не найден
-2025-03-22 13:13:55,402 - WARNING - backend.src.core.config - Пользователь admin не найден
+2025-03-28 11:40:51,497 - INFO - backend.src.core.config - Starting up application...
+2025-03-28 11:41:42,362 - ERROR - backend.src.core.config - Ошибка при создании пользователя: type object 'Users' has no attribute 'get_by_username'
+2025-03-28 11:46:22,781 - INFO - backend.src.core.config - Starting up application...
+2025-03-28 11:47:32,054 - ERROR - backend.src.core.config - Ошибка при создании пользователя: 'fitness_goal' is an invalid keyword argument for Users
+2025-03-28 11:51:52,045 - INFO - backend.src.core.config - Starting up application...
+2025-03-28 11:53:02,757 - ERROR - backend.src.core.config - Ошибка при создании пользователя: model_to_dict
+2025-03-28 11:58:01,434 - INFO - backend.src.core.config - Starting up application...
+2025-03-28 11:58:21,188 - INFO - backend.src.core.config - Starting up application...

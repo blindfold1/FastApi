@@ -1,8 +1,9 @@
 {
   "name": "python-fastapi-training",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "start": "concurrently \"poetry run uvicorn backend.src.main:app --port 8000 --reload\" \"cd frontend && npm run dev\""
+    "start": "concurrently \"venv\\Scripts\\uvicorn backend.src.main:app --port 8000 --reload\" \"cd frontend && npm run dev\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

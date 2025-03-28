@@ -1,3 +1,5 @@
+from typing import Any, AsyncGenerator
+
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import declarative_base, sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
@@ -7,7 +9,7 @@ from backend.src.core.config import settings
 import logging
 import traceback
 
-from backend.src.db.dependencies import SessionDep
+from backend.src.db.dependencies import SessionDep, AsyncSessionLocal
 
 # Настройка базового класса для моделей
 Base = declarative_base()
@@ -20,11 +22,7 @@ engine = create_async_engine(
 )
 
 
-AsyncSessionLocal = sessionmaker(
-    bind=engine,
-    class_=AsyncSession,
-    expire_on_commit=False
-)
+
 
 database_router = APIRouter()
 
@@ -44,6 +42,6 @@ async def setup_database():
 
         )
 
-async def get_db() -> SessionDep:
+async def get_db() -> AsyncGenerator[Any, Any]:
     async with AsyncSessionLocal() as session:
         yield session
