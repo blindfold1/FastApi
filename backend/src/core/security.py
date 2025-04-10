@@ -1,11 +1,12 @@
-# backend/src/core/security.py
 from datetime import datetime, timedelta
-from jose import JWTError, jwt
-from passlib.context import CryptContext
+
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
+from jose import JWTError, jwt
+from passlib.context import CryptContext
 from sqlalchemy.ext.asyncio import AsyncSession
-from backend.src.db.database import get_db
+
+from ..db.database import get_db
 
 # Настройки
 SECRET_KEY = "secret"  # Замените на свой секретный ключ
@@ -17,7 +18,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 class AuthHandler:
     def __init__(self):
-        self.oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+        self.oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
 
     def verify_password(self, plain_password: str, hashed_password: str) -> bool:
         return pwd_context.verify(plain_password, hashed_password)
@@ -51,10 +52,10 @@ class AuthHandler:
 
     async def get_current_user(
         self,
-        token: str = Depends(OAuth2PasswordBearer(tokenUrl="token")),
+        token: str = Depends(OAuth2PasswordBearer(tokenUrl="auth/token")),
         db: AsyncSession = Depends(get_db),
     ):
-        from backend.src.models.tables import Users
+        from ..models.tables import Users
 
         username = self.decode_token(token)
         if not username:

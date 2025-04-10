@@ -1,5 +1,7 @@
-from pydantic import BaseModel, ConfigDict
 from typing import Optional
+
+from pydantic import BaseModel, ConfigDict
+
 
 class UserBase(BaseModel):
     name: Optional[str] = None
@@ -61,20 +63,34 @@ class TrackerResponse(TrackerBase):
 
 
 class FoodBase(BaseModel):
-   name : str
-   calories : Optional[int] = 0
-   carbs : Optional[int] = 0
-   fats : Optional[int] = 0
-   proteins : Optional[int] = 0
+    id: int
+    name: str
+    calories: float
+    proteins: float  # Change from int to float
+    fats: float
+    carbs: float  # Change from int to float
+    vitamin_c: float
+    calcium: float
 
 class FoodCreate(FoodBase):
     pass
 
-class FoodResponse(FoodBase):
-    id: int
-    user_ud : int
-    model_config = ConfigDict(from_attributes=True)
+# backend/src/schemas/pydantic_models.py
+from pydantic import BaseModel
 
+class FoodResponse(BaseModel):
+    id: int
+    name: str
+    calories: float
+    proteins: float  # Change from int to float
+    fats: float
+    carbs: float     # Change from int to float
+    vitamin_c: float
+    calcium: float
+    user_id: int     # Fix the typo: change user_ud to user_id
+
+    class Config:
+        from_attributes = True
 
 
 

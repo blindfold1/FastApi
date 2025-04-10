@@ -1,13 +1,11 @@
-
-
-from fastapi import HTTPException, Depends, status
+from fastapi import HTTPException
 from fastapi.security import OAuth2PasswordBearer
-
 from passlib.context import CryptContext
 
-
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/token")
+access_token_scheme = OAuth2PasswordBearer(tokenUrl="/auth/token")
+refresh_token_scheme = OAuth2PasswordBearer(tokenUrl="/auth/refresh")
+
 from fastapi import status
 
 credentials_exception = HTTPException(

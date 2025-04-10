@@ -1,4 +1,4 @@
-from backend.src.models.tables import Users
+from src.models.tables import Users
 
 
 async def authenticate_user(self, db, username: str, password: str):

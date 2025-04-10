@@ -1,8 +1,10 @@
-# backend/src/models/tables.py
-from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey, select
+from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey, select, Date
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import relationship
-from backend.src.db.database import Base
+
+from ..core.config import logger
+from ..core.security import auth_handler
+from ..db.database import Base
 
 
 class Users(Base):
@@ -17,62 +19,111 @@ class Users(Base):
     age = Column(Integer)
     fitness_goal = Column(String)
     is_active = Column(Boolean, default=True)
+    scope = Column(String(255), default="user", nullable=False)
 
-    foods = relationship("Foods", back_populates="user")
+    foods = relationship("Foods", back_populates="user", cascade="all, delete-orphan")
+    tracker = relationship(
+        "Tracker", back_populates="user", cascade="all, delete-orphan"
+    )
 
     @staticmethod
     async def authenticate(db: AsyncSession, username: str, password: str):
-        from sqlalchemy import select
-        from backend.src.core.security import (
-            auth_handler,
-        )  # Импорт перемещен внутрь метода
-
+        logger.info(f"Authenticating user: {username}")
         query = select(Users).where(Users.username == username)
         result = await db.execute(query)
         user = result.scalar_one_or_none()
-        if user and auth_handler.verify_password(password, user.password_hash):
-            return user
+        if user:
+            logger.info(f"User {username} found, verifying password...")
+            if auth_handler.verify_password(password, user.password_hash):
+                logger.info(f"User {username} authenticated successfully")
+                return user
+            else:
+                logger.warning(f"Password verification failed for user {username}")
+                return None
+        logger.warning(f"User {username} not found")
         return None
 
     @staticmethod
     async def get_by_token(db: AsyncSession, token: str):
-        from backend.src.core.security import (
-            auth_handler,
-        )  # Импорт перемещен внутрь метода
-
+        logger.info("Decoding token to get username")
         username = auth_handler.decode_token(token)
         if not username:
+            logger.error("Failed to decode token")
             return None
+        logger.info(f"Token decoded, username: {username}")
         query = select(Users).where(Users.username == username)
         result = await db.execute(query)
-        return result.scalar_one_or_none()
+        user = result.scalar_one_or_none()
+        if user:
+            logger.info(f"User {username} found by token")
+        else:
+            logger.warning(f"User {username} not found by token")
+        return user
 
     @staticmethod
     async def get_by_username(db: AsyncSession, username: str):
-        from sqlalchemy import select
-
+        logger.info(f"Querying user by username: {username}")
         query = select(Users).where(Users.username == username)
         result = await db.execute(query)
-        return result.scalar_one_or_none()
+        user = result.scalar_one_or_none()
+        if user:
+            logger.info(f"User {username} found")
+        else:
+            logger.warning(f"User {username} not found")
+        return user
 
 
 class Foods(Base):
     __tablename__ = "foods"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True, nullable=False)
-    calories = Column(Integer, nullable=False)
-    carbs = Column(Integer, nullable=False)
-    fats = Column(Integer, nullable=False)
-    proteins = Column(Integer, nullable=False)
+    name = Column(String, nullable=False)
+    calories = Column(Float, nullable=False)
+    carbs = Column(Float, nullable=False)
+    fats = Column(Float, nullable=False)
+    proteins = Column(Float, nullable=False)
+    vitamin_c = Column(Float, nullable=True)  # Allow NULL
+    calcium = Column(Float, nullable=True)  # Allow NULL
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
 
     user = relationship("Users", back_populates="foods")
 
     @staticmethod
     async def get_by_username(db: AsyncSession, name: str, user_id: int):
-        from sqlalchemy import select
-
+        logger.info(f"Querying food by name: {name} for user_id: {user_id}")
         query = select(Foods).where(Foods.name == name, Foods.user_id == user_id)
         result = await db.execute(query)
-        return result.scalar_one_or_none()
+        food = result.scalar_one_or_none()
+        if food:
+            logger.info(f"Food {name} found for user_id: {user_id}")
+        else:
+            logger.info(f"Food {name} not found for user_id: {user_id}")
+        return food
+
+
+class Tracker(Base):
+    __tablename__ = "tracker"
+
+    id = Column("id", Integer, primary_key=True, index=True)
+    user_id = Column(
+        "user_id", Integer, ForeignKey("users.id"), nullable=False, index=True
+    )
+    date = Column("date", Date, nullable=False, index=True)
+    calories = Column("calories", Float, nullable=False, default=0.0)
+    carbs = Column("carbs", Float, nullable=False, default=0.0)
+    fats = Column("fats", Float, nullable=False, default=0.0)
+    proteins = Column("proteins", Float, nullable=False, default=0.0)
+
+    user = relationship("Users", back_populates="tracker")
+
+    @staticmethod
+    async def get_by_user_and_date(db: AsyncSession, user_id: int, date: date):
+        logger.info(f"Querying tracker for user_id: {user_id} on date: {date}")
+        query = select(Tracker).where(Tracker.user_id == user_id, Tracker.date == date)
+        result = await db.execute(query)
+        tracker = result.scalar_one_or_none()
+        if tracker:
+            logger.info(f"Tracker found for user_id: {user_id} on date: {date}")
+        else:
+            logger.info(f"Tracker not found for user_id: {user_id} on date: {date}")
+        return tracker

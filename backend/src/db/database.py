@@ -1,30 +1,29 @@
-from typing import Any, AsyncGenerator
-
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import declarative_base, sessionmaker
-from sqlalchemy.exc import SQLAlchemyError
-from fastapi import APIRouter, HTTPException
-from backend.src.core.config import settings
-
+# backend/src/db/database.py
 import logging
 import traceback
+from typing import Any, AsyncGenerator
 
-from backend.src.db.dependencies import SessionDep, AsyncSessionLocal
+from fastapi import APIRouter, HTTPException
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy.orm import sessionmaker, declarative_base
 
-# Настройка базового класса для моделей
-Base = declarative_base()
+from .base import Base
+from .dependencies import engine
+from ..core.config import settings
 
-# Создание асинхронного движка
-engine = create_async_engine(
-    settings.DATABASE_URL,
-    echo=True,
-    future=True
+async_session = sessionmaker(
+    engine, class_=AsyncSession, expire_on_commit=False, future=True
 )
 
 
+async def get_db() -> AsyncGenerator[Any, Any]:
+    async with async_session() as session:
+        yield session
 
 
 database_router = APIRouter()
+
 
 @database_router.post("/db")
 async def setup_database():
@@ -36,12 +35,4 @@ async def setup_database():
     except SQLAlchemyError as e:
         logging.error(f"Database error: {str(e)}")
         logging.error(traceback.format_exc())
-        raise HTTPException(
-            status_code=500,
-            detail="Database creation failed"
-
-        )
-
-async def get_db() -> AsyncGenerator[Any, Any]:
-    async with AsyncSessionLocal() as session:
-        yield session
+        raise HTTPException(status_code=500, detail="Database creation failed")
