@@ -3514,3 +3514,132 @@ pydantic_core._pydantic_core.ValidationError: 1 validation error for FoodRespons
 2025-04-10 12:59:04,633 - INFO - backend.src.core.config - Food found with data_type 'Foundation'
 2025-04-10 12:59:04,671 - INFO - backend.src.core.config - Food 'Cheese, ricotta, whole milk' added successfully for user 1
 2025-04-10 12:59:50,809 - INFO - backend.src.core.config - Shutting down application...
+2025-04-10 13:04:10,062 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-10 13:04:10,113 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-10 13:04:10,113 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-10 13:04:10,128 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-10 13:04:10,128 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-10 13:04:10,128 - INFO - backend.src.core.config - Starting up application...
+2025-04-10 13:05:17,333 - INFO - backend.src.core.config - Fetching all users
+2025-04-10 13:05:17,583 - INFO - backend.src.core.config - Table 'users' exists and is accessible
+2025-04-10 13:05:17,599 - INFO - backend.src.core.config - Found 1 users
+2025-04-10 13:36:20,687 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-10 13:36:20,721 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-10 13:36:20,734 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-10 13:36:20,734 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-10 13:36:20,742 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-10 13:36:20,742 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:10:46,601 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-11 14:10:46,674 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:10:46,691 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:10:46,700 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:10:46,730 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-11 14:10:46,732 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:11:13,116 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:11:13,345 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:11:13,789 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:11:33,255 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:11:33,260 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:11:33,650 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:24:38,496 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 14:36:35,027 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-11 14:36:35,106 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:36:35,122 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:36:35,169 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:36:35,169 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-11 14:36:35,169 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:36:45,416 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-11 14:36:45,479 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:36:45,479 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:36:45,533 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:36:45,542 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-11 14:36:45,542 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:37:42,856 - INFO - backend.src.core.config - Using USDA API Key: DEMO_KEY
+2025-04-11 14:37:42,920 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:37:42,920 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:37:42,969 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:37:42,983 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST']), APIRoute(path='/food/food/', name='add_food', methods=['POST'])]
+2025-04-11 14:37:42,983 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:37:55,583 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:37:55,737 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:37:56,150 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:38:16,416 - INFO - backend.src.core.config - Fetching all users
+2025-04-11 14:38:16,426 - INFO - backend.src.core.config - Table 'users' exists and is accessible
+2025-04-11 14:38:16,426 - INFO - backend.src.core.config - Found 1 users
+2025-04-11 14:38:35,421 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:38:35,421 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:38:35,811 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:38:49,052 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:38:49,052 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:38:49,437 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:38:56,141 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:38:56,141 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:38:56,536 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:38:58,851 - INFO - backend.src.core.config - Authenticating user: admin
+2025-04-11 14:38:58,851 - INFO - backend.src.core.config - User admin found, verifying password...
+2025-04-11 14:38:59,231 - INFO - backend.src.core.config - User admin authenticated successfully
+2025-04-11 14:42:46,562 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 14:46:55,078 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:46:55,078 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:46:55,093 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:46:55,093 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 14:46:55,093 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:50:03,226 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:50:03,240 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:50:03,240 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:50:03,240 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 14:50:03,240 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:52:01,150 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 14:52:07,780 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:52:07,783 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:52:07,783 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:52:07,783 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 14:52:07,783 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:57:24,296 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:57:24,312 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:57:24,328 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:57:24,334 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 14:57:24,334 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 14:59:24,419 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 14:59:24,435 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 14:59:24,435 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 14:59:24,435 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 14:59:24,450 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:01:01,680 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 15:09:19,070 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:09:19,083 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:09:19,086 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:09:19,086 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:09:19,086 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:11:32,111 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 15:11:38,973 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:11:38,973 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:11:38,989 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:11:38,989 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:11:38,989 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:15:52,794 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:15:52,810 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:15:52,810 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:15:52,810 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:15:52,810 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:19:27,395 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:19:27,405 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:19:27,405 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:19:27,421 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:19:27,424 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:21:22,360 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:21:22,363 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:21:22,363 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:21:22,376 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:21:22,376 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:22:59,663 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:22:59,672 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:22:59,679 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:22:59,679 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:22:59,679 - INFO - backend.src.core.config - Starting up application...
+2025-04-11 15:25:52,069 - INFO - backend.src.core.config - Shutting down application...
+2025-04-11 15:25:59,754 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-04-11 15:25:59,754 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST'])]
+2025-04-11 15:25:59,775 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-04-11 15:25:59,775 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-04-11 15:25:59,775 - INFO - backend.src.core.config - Starting up application...

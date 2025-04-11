@@ -18,7 +18,7 @@ from src.db.base import Base
 from src.models.tables import Users
 
 # Создаём тестовую базу данных
-TEST_DATABASE_URL = "postgresql+asyncpg://user:password@localhost:5432/test_gymhepler"
+TEST_DATABASE_URL = "postgresql+asyncpg://postgres:3103@localhost:5432/users"
 
 test_engine = create_async_engine(TEST_DATABASE_URL, echo=True)
 

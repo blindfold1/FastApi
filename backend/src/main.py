@@ -10,6 +10,7 @@ from fastapi.responses import JSONResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import sessionmaker
 
+from .api.routes.tracker import tracker_router
 from .db.database import engine, database_router
 from .api.routes import auth_router, clients_router, food_router
 from .core import settings
@@ -85,6 +86,8 @@ app.include_router(auth_router)
 app.include_router(clients_router)
 
 app.include_router(food_router)
+
+app.include_router(tracker_router)
 
 origins = [
     "http://localhost:5173",

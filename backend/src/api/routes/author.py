@@ -5,7 +5,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from ...core.config import logger
+from ..auth.token import refresh_token_scheme, credentials_exception
+from ...core.config import logger, settings
 from ...core.security import auth_handler
 from ...db.database import get_db
 from ...models.tables import Users
@@ -105,24 +106,40 @@ async def read_me(
         )
 
 
-@auth_router.post("/refresh")
+@auth_router.post("/refresh", response_model=Token)
 async def refresh_token(
-    token: str = Depends(auth_handler.oauth2_scheme),
+    token: str = Depends(refresh_token_scheme),
     db: AsyncSession = Depends(get_db),
 ):
-    user = await Users.get_by_token(db, token)
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Could not validate credentials",
-            headers={"WWW-Authenticate": "Bearer"},
+    try:
+        payload = auth_handler.decode_token(token)
+        if not payload:
+            raise credentials_exception
+        username = payload.get("sub")
+        if not username:
+            raise credentials_exception
+
+        user = await Users.get_by_username(db, username)
+        if not user:
+            raise credentials_exception
+
+        new_access_token = auth_handler.create_access_token(
+            data={"sub": user.username, "scopes": user.scope},
+            expires_delta=timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES),
         )
-    new_access_token = auth_handler.create_access_token(
-        data={"sub": user.username, "scopes": user.scope}
-    )
-    new_refresh_token = auth_handler.create_refresh_token(data={"sub": user.username})
-    return {
-        "access_token": new_access_token,
-        "refresh_token": new_refresh_token,
-        "token_type": "bearer",
-    }
+        new_refresh_token = auth_handler.create_refresh_token(
+            data={"sub": user.username}, expires_delta=timedelta(days=30)
+        )
+        return {
+            "access_token": new_access_token,
+            "refresh_token": new_refresh_token,
+            "token_type": "bearer",
+        }
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error during token refresh: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal server error",
+        )

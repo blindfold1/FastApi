@@ -1,4 +1,15 @@
-from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey, select, Date
+from sqlalchemy import (
+    Column,
+    Integer,
+    String,
+    Boolean,
+    Float,
+    ForeignKey,
+    select,
+    Date,
+    DateTime,
+)
+from sqlalchemy.sql import func
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import relationship
 
@@ -75,6 +86,7 @@ class Users(Base):
 
 class Foods(Base):
     __tablename__ = "foods"
+    __table_args__ = {"extend_existing": True}  # Добавляем для предотвращения конфликта
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
@@ -82,14 +94,15 @@ class Foods(Base):
     carbs = Column(Float, nullable=False)
     fats = Column(Float, nullable=False)
     proteins = Column(Float, nullable=False)
-    vitamin_c = Column(Float, nullable=True)  # Allow NULL
-    calcium = Column(Float, nullable=True)  # Allow NULL
+    vitamin_c = Column(Float, nullable=True)
+    calcium = Column(Float, nullable=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    created_at = Column(DateTime, server_default=func.now(), nullable=False)
 
     user = relationship("Users", back_populates="foods")
 
     @staticmethod
-    async def get_by_username(db: AsyncSession, name: str, user_id: int):
+    async def get_by_name(db: AsyncSession, name: str, user_id: int):
         logger.info(f"Querying food by name: {name} for user_id: {user_id}")
         query = select(Foods).where(Foods.name == name, Foods.user_id == user_id)
         result = await db.execute(query)
@@ -104,15 +117,13 @@ class Foods(Base):
 class Tracker(Base):
     __tablename__ = "tracker"
 
-    id = Column("id", Integer, primary_key=True, index=True)
-    user_id = Column(
-        "user_id", Integer, ForeignKey("users.id"), nullable=False, index=True
-    )
-    date = Column("date", Date, nullable=False, index=True)
-    calories = Column("calories", Float, nullable=False, default=0.0)
-    carbs = Column("carbs", Float, nullable=False, default=0.0)
-    fats = Column("fats", Float, nullable=False, default=0.0)
-    proteins = Column("proteins", Float, nullable=False, default=0.0)
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    date = Column(Date, nullable=False, index=True)
+    calories = Column(Float, nullable=False, default=0.0)
+    carbs = Column(Float, nullable=False, default=0.0)
+    fats = Column(Float, nullable=False, default=0.0)
+    proteins = Column(Float, nullable=False, default=0.0)
 
     user = relationship("Users", back_populates="tracker")
 

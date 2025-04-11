@@ -1,5 +1,5 @@
 from typing import Optional
-
+from datetime import date, datetime
 from pydantic import BaseModel, ConfigDict
 
 
@@ -39,28 +39,26 @@ class Token(BaseModel):
     refresh_token: str
 
 class TrackerBase(BaseModel):
-    id : int
-    user_ud : int
-    calories : Optional[int] = 0
-    carbs : Optional[int] = 0
-    fats : Optional[int] = 0
-    proteins : Optional[int] = 0
+    user_id: int
+    date: date
+    calories: Optional[float] = 0.0
+    carbs: Optional[float] = 0.0
+    fats: Optional[float] = 0.0
+    proteins: Optional[float] = 0.0
 
 class TrackerCreate(TrackerBase):
     pass
 
-class TrackerUpdate(TrackerBase):
-    user_ud : int
-    calories: Optional[int] = 0
-    carbs: Optional[int] = 0
-    fats: Optional[int] = 0
-    proteins: Optional[int] = 0
+class TrackerUpdate(BaseModel):
+    calories: Optional[float] = None
+    carbs: Optional[float] = None
+    fats: Optional[float] = None
+    proteins: Optional[float] = None
+
 
 class TrackerResponse(TrackerBase):
     id: int
     model_config = ConfigDict(from_attributes=True)
-
-
 
 class FoodBase(BaseModel):
     id: int
@@ -82,15 +80,14 @@ class FoodResponse(BaseModel):
     id: int
     name: str
     calories: float
-    proteins: float  # Change from int to float
+    proteins: float
     fats: float
-    carbs: float     # Change from int to float
+    carbs: float
     vitamin_c: float
     calcium: float
-    user_id: int     # Fix the typo: change user_ud to user_id
+    user_id: int
+    created_at: datetime
 
-    class Config:
-        from_attributes = True
-
+    model_config = ConfigDict(from_attributes=True)
 
 
