@@ -2,6 +2,8 @@ from datetime import timedelta
 
 from fastapi import APIRouter, Depends, status, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
+from passlib.context import CryptContext
+from sqlalchemy import select
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -20,44 +22,41 @@ auth_router = APIRouter(prefix="/auth", tags=["Authentication"])
 async def login(
     form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSession = Depends(get_db)
 ):
-    """
-    Authenticate a user and return access and refresh tokens.
+    logger.info(
+        f"Received login request with username: {form_data.username}, grant_type: {form_data.grant_type}"
+    )
+    # Проверка grant_type
+    if form_data.grant_type and form_data.grant_type != "password":
+        logger.warning(f"Invalid grant_type: {form_data.grant_type}")
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Invalid grant_type. Must be 'password' or omitted.",
+        )
 
-    Parameters:
-    - form_data: OAuth2PasswordRequestForm - Username and password for authentication.
-
-    Returns:
-    - Token: Access and refresh tokens.
-    """
     try:
-        # Аутентификация пользователя
         user = await Users.authenticate(db, form_data.username, form_data.password)
         if not user:
+            logger.warning(f"Authentication failed for username: {form_data.username}")
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect credentials"
             )
-
-        # Проверка, активен ли пользователь
         if not user.is_active:
+            logger.warning(f"User {form_data.username} is not active")
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN, detail="User is not active"
             )
-
-        # Создание токенов
         access_token = auth_handler.create_access_token(
             data={"sub": user.username}, expires_delta=timedelta(minutes=15)
         )
-
         refresh_token = auth_handler.create_refresh_token(
             data={"sub": user.username}, expires_delta=timedelta(days=30)
         )
-
+        logger.info(f"Successfully authenticated user: {user.username}")
         return {
             "access_token": access_token,
             "token_type": "bearer",
             "refresh_token": refresh_token,
         }
-
     except HTTPException as e:
         raise e
     except SQLAlchemyError as e:
@@ -143,3 +142,27 @@ async def refresh_token(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal server error",
         )
+
+
+@auth_router.post("/register")
+async def register(username: str, password: str, db: AsyncSession = Depends(get_db)):
+    existing_user = (
+        (await db.execute(select(Users).where(Users.username == username)))
+        .scalars()
+        .first()
+    )
+    if existing_user:
+        raise HTTPException(status_code=400, detail="Username already registered")
+
+    pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+    hashed_password = pwd_context.hash(password)
+
+    new_user = Users(
+        username=username,
+        password_hash=hashed_password,
+    )
+    db.add(new_user)
+    await db.commit()
+    await db.refresh(new_user)
+
+    return {"message": "User registered successfully"}

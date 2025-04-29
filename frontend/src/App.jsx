@@ -1,54 +1,83 @@
+import './App.css'; // Импорт стилей
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import Dashboard from './Dashboard';
 import ErrorBoundary from './ErrorBoundary';
+import LoginForm from './components/LoginForm';
+import RegisterForm from './components/RegisterForm';
+import Dashboard from './Dashboard';
+import FoodList from './components/FoodList';
+import FoodForm from './components/FoodForm';
+import Tracker from './components/Tracker';
+import TrackerEntryForm from './components/TrackerEntryForm';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [error, setError] = useState('');
-
-  console.log('App.jsx: Rendering App component'); // Отладка
-
-  const login = async (username, password) => {
-    console.log('App.jsx: login function called with:', { username, password }); // Отладка
-    try {
-      const response = await axios.post('http://127.0.0.1:8000/auth/token', {
-        username,
-        password,
-      });
-      console.log('App.jsx: Login response:', response.data); // Отладка
-      localStorage.setItem('access_token', response.data.access_token);
-      localStorage.setItem('refresh_token', response.data.refresh_token);
-      setIsAuthenticated(true);
-      setError('');
-    } catch (err) {
-      console.error('App.jsx: Login error:', err); // Отладка
-      setError('Login failed: ' + (err.response?.data?.detail || err.message));
-      setIsAuthenticated(false);
-    }
-  };
 
   const checkAuth = () => {
     const accessToken = localStorage.getItem('access_token');
-    console.log('App.jsx: Access token:', accessToken); // Отладка
-    if (accessToken) {
+    setIsAuthenticated(!!accessToken);
+  };
+
+  const refreshToken = async () => {
+    try {
+      const refreshToken = localStorage.getItem('refresh_token');
+      const response = await axios.post('http://127.0.0.1:8000/auth/refresh', null, {
+        headers: {
+          Authorization: `Bearer ${refreshToken}`,
+        },
+      });
+      localStorage.setItem('access_token', response.data.access_token);
+      localStorage.setItem('refresh_token', response.data.refresh_token);
       setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
+      return response.data.access_token;
+    } catch (err) {
+      console.error('Failed to refresh token:', err.response?.data || err.message);
+      handleLogout();
+      return null;
     }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    setIsAuthenticated(false);
   };
 
   useEffect(() => {
     checkAuth();
-  }, []);
 
-  console.log('App.jsx: isAuthenticated:', isAuthenticated); // Отладка
+    const interceptor = axios.interceptors.response.use(
+      (response) => response,
+      async (error) => {
+        const originalRequest = error.config;
+        if (error.response?.status === 401 && !originalRequest._retry) {
+          originalRequest._retry = true;
+          const newAccessToken = await refreshToken();
+          if (newAccessToken) {
+            originalRequest.headers['Authorization'] = `Bearer ${newAccessToken}`;
+            return axios(originalRequest);
+          }
+        }
+        return Promise.reject(error);
+      }
+    );
+
+    return () => axios.interceptors.response.eject(interceptor);
+  }, []);
 
   return (
     <ErrorBoundary>
       <Router>
         <div className="App">
+          {isAuthenticated && (
+            <nav>
+              <Link to="/dashboard">Dashboard</Link> |{' '}
+              <Link to="/foods">Foods</Link> |{' '}
+              <Link to="/tracker">Tracker</Link> |{' '}
+              <button onClick={handleLogout}>Logout</button>
+            </nav>
+          )}
           <Routes>
             <Route
               path="/"
@@ -56,33 +85,17 @@ function App() {
                 isAuthenticated ? (
                   <Navigate to="/dashboard" />
                 ) : (
-                  <div>
-                    <h1>Login</h1>
-                    {error && <p className="error">{error}</p>}
-                    <form
-                      onSubmit={(e) => {
-                        e.preventDefault();
-                        const username = e.target.username.value;
-                        const password = e.target.password.value;
-                        console.log('App.jsx: Form submitted with:', { username, password }); // Отладка
-                        login(username, password);
-                      }}
-                    >
-                      <input
-                        type="text"
-                        name="username"
-                        placeholder="Username"
-                        required
-                      />
-                      <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        required
-                      />
-                      <button type="submit">Login</button>
-                    </form>
-                  </div>
+                  <LoginForm onLogin={setIsAuthenticated} />
+                )
+              }
+            />
+            <Route
+              path="/register"
+              element={
+                isAuthenticated ? (
+                  <Navigate to="/dashboard" />
+                ) : (
+                  <RegisterForm onRegister={setIsAuthenticated} />
                 )
               }
             />
@@ -90,6 +103,32 @@ function App() {
               path="/dashboard"
               element={
                 isAuthenticated ? <Dashboard /> : <Navigate to="/" />
+              }
+            />
+            <Route
+              path="/foods"
+              element={
+                isAuthenticated ? (
+                  <div>
+                    <FoodForm onAddFood={(food) => console.log('Food added:', food)} />
+                    <FoodList />
+                  </div>
+                ) : (
+                  <Navigate to="/" />
+                )
+              }
+            />
+            <Route
+              path="/tracker"
+              element={
+                isAuthenticated ? (
+                  <div>
+                    <TrackerEntryForm onAddEntry={(entry) => console.log('Entry added:', entry)} />
+                    <Tracker />
+                  </div>
+                ) : (
+                  <Navigate to="/" />
+                )
               }
             />
           </Routes>
