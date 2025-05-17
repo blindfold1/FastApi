@@ -10,7 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/frontend" />
       <excludeFolder url="file://$MODULE_DIR$/static" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (gymhepler)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (gymhepler)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -3832,3 +3832,149 @@ WHERE foods.id = $1::INTEGER AND foods.user_id = $2::INTEGER]
 [parameters: ('Apples, fuji, with skin, raw', 0.0, 15.7, 0.162, 0.148, 0.0, 5.98, 3)]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-04-21 18:30:16,198 - INFO - backend.src.core.config - Shutting down application...
+2025-05-03 13:24:08,264 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:24:08,272 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:24:08,272 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:24:08,288 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:27:25,275 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:27:25,275 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:27:25,282 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:27:25,298 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:27:59,256 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:27:59,263 - INFO - backend.src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:27:59,268 - INFO - backend.src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:27:59,272 - INFO - backend.src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:27:59,274 - INFO - backend.src.core.config - Starting up application...
+2025-05-03 13:28:01,472 - INFO - backend.src.core.config - Shutting down application...
+2025-05-03 13:28:07,104 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:28:07,104 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:28:07,104 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:28:07,104 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:33:44,601 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:33:44,617 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:33:44,617 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:33:44,633 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:33:44,888 - INFO - src.core.config - Starting up application...
+2025-05-03 13:33:44,903 - INFO - src.core.config - Received login request with username: testuser, grant_type: None
+2025-05-03 13:33:44,903 - INFO - src.core.config - Authenticating user: testuser
+2025-05-03 13:33:44,903 - ERROR - src.core.config - Error during login for username testuser: Task <Task pending name='anyio.from_thread.BlockingPortal._call_func' coro=<BlockingPortal._call_func() running at C:\Users\kirill\gymhepler\venv\Lib\site-packages\anyio\from_thread.py:221> cb=[TaskGroup._spawn.<locals>.task_done() at C:\Users\kirill\gymhepler\venv\Lib\site-packages\anyio\_backends\_asyncio.py:794]> got Future <Future pending cb=[BaseProtocol._on_waiter_completed()]> attached to a different loop
+2025-05-03 13:33:45,029 - INFO - src.core.config - Received login request with username: testuser, grant_type: None
+2025-05-03 13:33:45,029 - INFO - src.core.config - Authenticating user: testuser
+2025-05-03 13:33:45,092 - INFO - src.core.config - User testuser found, verifying password...
+2025-05-03 13:33:45,092 - ERROR - src.core.config - Error during login for username testuser: hash could not be identified
+2025-05-03 13:33:45,108 - INFO - src.core.config - Received login request with username: nonexistent, grant_type: None
+2025-05-03 13:33:45,108 - INFO - src.core.config - Authenticating user: nonexistent
+2025-05-03 13:33:45,172 - WARNING - src.core.config - User nonexistent not found
+2025-05-03 13:33:45,172 - WARNING - src.core.config - Authentication failed for username: nonexistent
+2025-05-03 13:33:45,188 - INFO - src.core.config - Received login request with username: inactiveuser, grant_type: None
+2025-05-03 13:33:45,188 - INFO - src.core.config - Authenticating user: inactiveuser
+2025-05-03 13:33:45,251 - WARNING - src.core.config - User inactiveuser not found
+2025-05-03 13:33:45,251 - WARNING - src.core.config - Authentication failed for username: inactiveuser
+2025-05-03 13:33:45,267 - INFO - src.core.config - Received login request with username: testuser, grant_type: None
+2025-05-03 13:33:45,267 - INFO - src.core.config - Authenticating user: testuser
+2025-05-03 13:33:45,346 - INFO - src.core.config - User testuser found, verifying password...
+2025-05-03 13:33:45,346 - ERROR - src.core.config - Error during login for username testuser: hash could not be identified
+2025-05-03 13:33:45,348 - INFO - src.core.config - Received login request with username: testuser, grant_type: None
+2025-05-03 13:33:45,348 - INFO - src.core.config - Authenticating user: testuser
+2025-05-03 13:33:45,449 - INFO - src.core.config - User testuser found, verifying password...
+2025-05-03 13:33:45,449 - ERROR - src.core.config - Error during login for username testuser: hash could not be identified
+2025-05-03 13:33:45,456 - INFO - src.core.config - Creating user with username: newuser
+2025-05-03 13:33:45,534 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:33:45,534 - INFO - src.core.config - Querying user by username: newuser
+2025-05-03 13:33:45,534 - WARNING - src.core.config - User newuser not found
+2025-05-03 13:33:45,880 - INFO - src.core.config - User newuser created successfully with ID 2
+2025-05-03 13:33:45,880 - INFO - src.core.config - Creating user with username: duplicateuser
+2025-05-03 13:33:45,975 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:33:45,975 - INFO - src.core.config - Querying user by username: duplicateuser
+2025-05-03 13:33:45,975 - WARNING - src.core.config - User duplicateuser not found
+2025-05-03 13:33:46,290 - INFO - src.core.config - User duplicateuser created successfully with ID 3
+2025-05-03 13:33:46,305 - INFO - src.core.config - Creating user with username: duplicateuser
+2025-05-03 13:33:46,305 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:33:46,305 - INFO - src.core.config - Querying user by username: duplicateuser
+2025-05-03 13:33:46,305 - INFO - src.core.config - User duplicateuser found
+2025-05-03 13:33:46,305 - WARNING - src.core.config - User with username duplicateuser already exists
+2025-05-03 13:33:46,321 - INFO - src.core.config - Shutting down application...
+2025-05-03 13:35:33,942 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:35:33,956 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:35:33,964 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:35:33,976 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:37:35,240 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:37:35,240 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:37:35,255 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:37:35,271 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:38:35,877 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/db', name='setup_database', methods=['POST'])]
+2025-05-03 13:38:35,882 - INFO - src.core.config - Auth router included with routes: [APIRoute(path='/auth/token', name='login', methods=['POST']), APIRoute(path='/auth/me', name='read_me', methods=['GET']), APIRoute(path='/auth/refresh', name='refresh_token', methods=['POST']), APIRoute(path='/auth/register', name='register', methods=['POST'])]
+2025-05-03 13:38:35,888 - INFO - src.core.config - Clients router included with routes: [APIRoute(path='/users', name='create_user', methods=['POST']), APIRoute(path='/users', name='get_users', methods=['GET']), APIRoute(path='/users/{user_id}', name='update_user', methods=['PUT']), APIRoute(path='/users/{user_id}', name='delete_user', methods=['DELETE'])]
+2025-05-03 13:38:35,903 - INFO - src.core.config - Food router included with routes: [APIRoute(path='/food/search-and-add-food/', name='search_and_add_food', methods=['POST'])]
+2025-05-03 13:38:36,389 - INFO - src.core.config - Starting up application...
+2025-05-03 13:38:36,401 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:36,401 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:36,401 - ERROR - src.core.config - Error during login for username Test: Task <Task pending name='anyio.from_thread.BlockingPortal._call_func' coro=<BlockingPortal._call_func() running at C:\Users\kirill\gymhepler\venv\Lib\site-packages\anyio\from_thread.py:221> cb=[TaskGroup._spawn.<locals>.task_done() at C:\Users\kirill\gymhepler\venv\Lib\site-packages\anyio\_backends\_asyncio.py:794]> got Future <Future pending cb=[BaseProtocol._on_waiter_completed()]> attached to a different loop
+2025-05-03 13:38:36,528 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:36,529 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:36,592 - INFO - src.core.config - User Test found, verifying password...
+2025-05-03 13:38:36,830 - WARNING - src.core.config - Password verification failed for user Test
+2025-05-03 13:38:36,830 - WARNING - src.core.config - Authentication failed for username: Test
+2025-05-03 13:38:36,846 - INFO - src.core.config - Received login request with username: nonexistent, grant_type: None
+2025-05-03 13:38:36,846 - INFO - src.core.config - Authenticating user: nonexistent
+2025-05-03 13:38:36,914 - WARNING - src.core.config - User nonexistent not found
+2025-05-03 13:38:36,914 - WARNING - src.core.config - Authentication failed for username: nonexistent
+2025-05-03 13:38:36,928 - INFO - src.core.config - Received login request with username: inactiveuser, grant_type: None
+2025-05-03 13:38:36,929 - INFO - src.core.config - Authenticating user: inactiveuser
+2025-05-03 13:38:37,004 - WARNING - src.core.config - User inactiveuser not found
+2025-05-03 13:38:37,004 - WARNING - src.core.config - Authentication failed for username: inactiveuser
+2025-05-03 13:38:37,018 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:37,018 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:37,083 - INFO - src.core.config - User Test found, verifying password...
+2025-05-03 13:38:37,326 - INFO - src.core.config - User Test authenticated successfully
+2025-05-03 13:38:37,326 - INFO - src.core.config - Successfully authenticated user: Test
+2025-05-03 13:38:37,353 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:37,356 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:37,427 - INFO - src.core.config - User Test found, verifying password...
+2025-05-03 13:38:37,650 - INFO - src.core.config - User Test authenticated successfully
+2025-05-03 13:38:37,650 - INFO - src.core.config - Successfully authenticated user: Test
+2025-05-03 13:38:37,666 - INFO - src.core.config - Decoding token to get username
+2025-05-03 13:38:37,666 - INFO - src.core.config - Token decoded, username: Test
+2025-05-03 13:38:37,731 - INFO - src.core.config - User Test found by token
+2025-05-03 13:38:37,749 - INFO - src.core.config - Creating user with username: newuser
+2025-05-03 13:38:37,827 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:38:37,827 - INFO - src.core.config - Querying user by username: newuser
+2025-05-03 13:38:37,828 - WARNING - src.core.config - User newuser not found
+2025-05-03 13:38:38,143 - INFO - src.core.config - User newuser created successfully with ID 2
+2025-05-03 13:38:38,158 - INFO - src.core.config - Creating user with username: Test
+2025-05-03 13:38:38,238 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:38:38,238 - INFO - src.core.config - Querying user by username: Test
+2025-05-03 13:38:38,238 - INFO - src.core.config - User Test found
+2025-05-03 13:38:38,238 - WARNING - src.core.config - User with username Test already exists
+2025-05-03 13:38:38,241 - INFO - src.core.config - Creating user with username: Test
+2025-05-03 13:38:38,241 - INFO - src.core.config - Table 'users' exists and is accessible
+2025-05-03 13:38:38,241 - INFO - src.core.config - Querying user by username: Test
+2025-05-03 13:38:38,241 - INFO - src.core.config - User Test found
+2025-05-03 13:38:38,241 - WARNING - src.core.config - User with username Test already exists
+2025-05-03 13:38:38,252 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:38,252 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:38,322 - INFO - src.core.config - User Test found, verifying password...
+2025-05-03 13:38:38,552 - INFO - src.core.config - User Test authenticated successfully
+2025-05-03 13:38:38,552 - INFO - src.core.config - Successfully authenticated user: Test
+2025-05-03 13:38:38,568 - INFO - src.core.config - Decoding token to get username
+2025-05-03 13:38:38,568 - INFO - src.core.config - Token decoded, username: Test
+2025-05-03 13:38:38,633 - INFO - src.core.config - User Test found by token
+2025-05-03 13:38:38,633 - INFO - src.core.config - Searching for food 'milk' in USDA API for user 1
+2025-05-03 13:38:38,884 - ERROR - src.core.config - USDA API request timed out for data_type 'Foundation'
+2025-05-03 13:38:38,886 - ERROR - src.core.config - USDA API request timed out for data_type 'Survey (FNDDS)'
+2025-05-03 13:38:38,886 - ERROR - src.core.config - USDA API request timed out for data_type 'Branded'
+2025-05-03 13:38:38,886 - ERROR - src.core.config - USDA API request timed out for data_type 'SR Legacy'
+2025-05-03 13:38:38,951 - INFO - src.core.config - Received login request with username: Test, grant_type: None
+2025-05-03 13:38:38,951 - INFO - src.core.config - Authenticating user: Test
+2025-05-03 13:38:39,027 - INFO - src.core.config - User Test found, verifying password...
+2025-05-03 13:38:39,269 - INFO - src.core.config - User Test authenticated successfully
+2025-05-03 13:38:39,269 - INFO - src.core.config - Successfully authenticated user: Test
+2025-05-03 13:38:39,272 - INFO - src.core.config - Decoding token to get username
+2025-05-03 13:38:39,272 - INFO - src.core.config - Token decoded, username: Test
+2025-05-03 13:38:39,343 - INFO - src.core.config - User Test found by token
+2025-05-03 13:38:39,343 - INFO - src.core.config - Searching for food 'nonexistentfood' in USDA API for user 1
+2025-05-03 13:38:39,578 - ERROR - src.core.config - USDA API request timed out for data_type 'Foundation'
+2025-05-03 13:38:39,578 - ERROR - src.core.config - USDA API request timed out for data_type 'Survey (FNDDS)'
+2025-05-03 13:38:39,578 - ERROR - src.core.config - USDA API request timed out for data_type 'Branded'
+2025-05-03 13:38:39,578 - ERROR - src.core.config - USDA API request timed out for data_type 'SR Legacy'
+2025-05-03 13:38:39,595 - INFO - src.core.config - Shutting down application...
