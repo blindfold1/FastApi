@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
     USDA_API_KEY: str = "0yyvFkoxgTXuNul5HigxI6f6Z2FO7YDAzfbDirhv"
+    MONGO_URI="mongodb+srv://sharafanovichkirill:3103@cluster0.4kamcli.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
     class Config:
         env_file = ".env"

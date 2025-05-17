@@ -13,6 +13,10 @@ class MongoDB:
     async def get_food(self, name, user_id):
         return await self.db.foods.find_one({"name": name, "user_id": user_id})
 
+    async def get_food_by_id(self, food_id, user_id):
+        from bson.objectid import ObjectId
+        return await self.db.foods.find_one({"_id": ObjectId(food_id), "user_id": user_id})
+
     async def save_tracker(self, tracker_data):
         result = await self.db.trackers.insert_one(tracker_data)
         return str(result.inserted_id)

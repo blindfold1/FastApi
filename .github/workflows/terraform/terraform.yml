@@ -1,0 +1,40 @@
+name: Terraform Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: 1.5.0
+
+    - name: Terraform Init
+      run: terraform init
+      env:
+        TF_VAR_atlas_public_key: ${{ secrets.ATLAS_PUBLIC_KEY }}
+        TF_VAR_atlas_private_key: ${{ secrets.ATLAS_PRIVATE_KEY }}
+        TF_VAR_atlas_org_id: ${{ secrets.ATLAS_ORG_ID }}
+
+    - name: Terraform Plan
+      run: terraform plan
+      env:
+        TF_VAR_atlas_public_key: ${{ secrets.ATLAS_PUBLIC_KEY }}
+        TF_VAR_atlas_private_key: ${{ secrets.ATLAS_PRIVATE_KEY }}
+        TF_VAR_atlas_org_id: ${{ secrets.ATLAS_ORG_ID }}
+
+    - name: Terraform Apply
+      run: terraform apply -auto-approve
+      env:
+        TF_VAR_atlas_public_key: ${{ secrets.ATLAS_PUBLIC_KEY }}
+        TF_VAR_atlas_private_key: ${{ secrets.ATLAS_PRIVATE_KEY }}
+        TF_VAR_atlas_org_id: ${{ secrets.ATLAS_ORG_ID }}
