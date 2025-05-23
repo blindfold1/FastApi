@@ -1,42 +1,38 @@
 # backend/src/db/database.py
 import logging
-import traceback
-from typing import Any, AsyncGenerator
-
-from fastapi import APIRouter, HTTPException
-from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import sessionmaker, declarative_base
-
-from .base import Base
-from .dependencies import engine
+from fastapi import APIRouter, Depends
+from motor.motor_asyncio import AsyncIOMotorClient
 from ..core.config import settings
 
-async_session = sessionmaker(
-    engine, class_=AsyncSession, expire_on_commit=False, future=True
-)
+logger = logging.getLogger(__name__)
 
-DATABASE_URL = settings.DATABASE_URL
-engine = create_async_engine(DATABASE_URL, echo=True)
-async_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+# Инициализация клиента MongoDB
+client = AsyncIOMotorClient(settings.MONGODB_URL)
+db = client[settings.MONGODB_DB_NAME]
 
+# Collections
+users_collection = db.users
+articles_collection = db.articles
+comments_collection = db.comments
+likes_collection = db.likes
 
-async def get_db() -> AsyncGenerator[Any, Any]:
-    async with async_session() as session:
-        yield session
-
+async def get_db():
+    """Получение экземпляра базы данных"""
+    return db
 
 database_router = APIRouter()
 
-
-@database_router.post("/db")
-async def setup_database():
-    """Создание всех таблиц в базе данных"""
+@database_router.on_event("startup")
+async def startup_db_client():
     try:
-        async with engine.begin() as conn:
-            await conn.run_sync(Base.metadata.create_all)
-        return {"status": "Database tables created successfully"}
-    except SQLAlchemyError as e:
-        logging.error(f"Database error: {str(e)}")
-        logging.error(traceback.format_exc())
-        raise HTTPException(status_code=500, detail="Database creation failed")
+        # Verify the connection
+        await client.admin.command('ping')
+        logger.info("Successfully connected to MongoDB")
+    except Exception as e:
+        logger.error(f"Failed to connect to MongoDB: {e}")
+        raise
+
+@database_router.on_event("shutdown")
+async def shutdown_db_client():
+    client.close()
+    logger.info("MongoDB connection closed")

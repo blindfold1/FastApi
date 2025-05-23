@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: blog-platform
+Version: 1.0.0
+Requires-Python: >=3.8
+Requires-Dist: fastapi>=0.115.12
+Requires-Dist: uvicorn>=0.34.0
+Requires-Dist: motor>=3.3.2
+Requires-Dist: pymongo>=4.6.2
+Requires-Dist: python-jose>=3.3.0
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: bcrypt>=4.1.2
+Requires-Dist: python-slugify>=8.0.4
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pydantic-settings>=2.8.1
+Dynamic: requires-dist
+Dynamic: requires-python

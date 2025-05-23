@@ -10,7 +10,7 @@ serializer = JsonSerializer()
 
 @router.post("/tracker/add-food")
 async def add_food_to_tracker(food_id: str, current_user=Depends(auth_handler.get_current_user)):
-    # Добавь метод get_food_by_id в MongoDB
+
     food = await mongo.get_food_by_id(food_id, current_user.id)
     if not food:
         raise HTTPException(status_code=404, detail="Food not found")
@@ -26,6 +26,6 @@ async def add_food_to_tracker(food_id: str, current_user=Depends(auth_handler.ge
     serializer.save_to_file(tracker, f"logs/tracker_{current_user.id}_{today}.txt")
     return {"id": tracker_id, **tracker}
 
-# Добавь в класс MongoDB в mongo.py
+
 async def get_food_by_id(self, food_id, user_id):
     return await self.db.foods.find_one({"_id": food_id, "user_id": user_id})

@@ -1,24 +1,19 @@
 from datetime import datetime, timedelta
-
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from sqlalchemy.ext.asyncio import AsyncSession
-
 from ..db.database import get_db
-
-# Настройки
-SECRET_KEY = "secret"  # Замените на свой секретный ключ
-ALGORITHM = "HS256"
+from ..core.config import settings
 
 # Настройка хеширования паролей
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
 
 class AuthHandler:
     def __init__(self):
-        self.oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
+        self.oauth2_scheme = oauth2_scheme
 
     def verify_password(self, plain_password: str, hashed_password: str) -> bool:
         return pwd_context.verify(plain_password, hashed_password)
@@ -30,42 +25,50 @@ class AuthHandler:
         to_encode = data.copy()
         expire = datetime.utcnow() + expires_delta
         to_encode.update({"exp": expire})
-        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+        encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
         return encoded_jwt
 
     def create_refresh_token(self, data: dict, expires_delta: timedelta) -> str:
         to_encode = data.copy()
         expire = datetime.utcnow() + expires_delta
         to_encode.update({"exp": expire})
-        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+        encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
         return encoded_jwt
 
-    def decode_token(self, token: str) -> str:
+    def decode_token(self, token: str) -> dict:
         try:
-            payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-            username: str = payload.get("sub")
-            if username is None:
-                return None
-            return username
+            payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
+            return payload
         except JWTError:
             return None
 
     async def get_current_user(
         self,
-        token: str = Depends(OAuth2PasswordBearer(tokenUrl="auth/token")),
-        db: AsyncSession = Depends(get_db),
+        token: str = Depends(oauth2_scheme),
+        db = Depends(get_db),
     ):
-        from ..models.tables import Users
+        credentials_exception = HTTPException(
+            status_code=401,
+            detail="Could not validate credentials",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+        
+        try:
+            payload = self.decode_token(token)
+            if payload is None:
+                raise credentials_exception
+            username: str = payload.get("sub")
+            if username is None:
+                raise credentials_exception
+        except JWTError:
+            raise credentials_exception
 
-        username = self.decode_token(token)
-        if not username:
-            raise HTTPException(status_code=401, detail="Invalid token")
-        user = await Users.get_by_token(db, token)
-        if not user:
-            raise HTTPException(status_code=401, detail="User not found")
-        if not user.is_active:
-            raise HTTPException(status_code=403, detail="User is not active")
+        user = await db.users_collection.find_one({"username": username})
+        if user is None:
+            raise credentials_exception
+        if not user.get("is_active", True):
+            raise HTTPException(status_code=403, detail="Inactive user")
+            
         return user
-
 
 auth_handler = AuthHandler()

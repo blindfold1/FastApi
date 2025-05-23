@@ -1,11 +1,20 @@
 {
-  "name": "python-fastapi-training",
+  "name": "blog-platform",
   "version": "1.0.0",
-  "private": true,
+  "description": "Modern blog platform with FastAPI and React",
   "scripts": {
-    "start": "concurrently \"venv\\Scripts\\uvicorn backend.src.main:app --port 8000 --reload\" \"cd frontend && npm run dev\""
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "axios": "^1.6.7"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.0"
   }
 }

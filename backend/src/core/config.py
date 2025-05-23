@@ -1,37 +1,45 @@
 import logging
-from logging.handlers import RotatingFileHandler
-
 from pydantic_settings import BaseSettings
-
+from pathlib import Path
+from typing import Optional
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql+asyncpg://postgres:3103@localhost:5432/users"
-    SECRET_KEY: str = "your_secret_key"
+    # Base
+    PROJECT_NAME: str = "Blog API"
+    VERSION: str = "1.0.0"
+    API_V1_STR: str = "/api"
+    
+    # MongoDB Atlas settings
+    MONGODB_URL: str = "mongodb+srv://kirill:3103@cluster0.4kamcli.mongodb.net/blog_platform?retryWrites=true&w=majority"
+    MONGODB_DB_NAME: str = "blog_platform"
+    
+    # JWT settings
+    SECRET_KEY: str = "your-secret-key-here"  # В продакшене использовать безопасный ключ
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
-    USDA_API_KEY: str = "0yyvFkoxgTXuNul5HigxI6f6Z2FO7YDAzfbDirhv"
-    MONGO_URI="mongodb+srv://sharafanovichkirill:3103@cluster0.4kamcli.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+    REFRESH_TOKEN_EXPIRE_DAYS: int = 7
+    
+    # CORS settings
+    CORS_ORIGINS: list = ["http://localhost:3000", "http://localhost:5173"]
+    
+    # File upload
+    UPLOAD_DIR: Path = Path("static/uploads")
+    MAX_FILE_SIZE: int = 5_242_880  # 5MB
 
     class Config:
         env_file = ".env"
         case_sensitive = True
 
-
 settings = Settings()
 
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("app.log"),
+        logging.StreamHandler()
+    ]
+)
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-
-formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s")
-
-file_handler = RotatingFileHandler(
-    "app.log", maxBytes=1_000_000, backupCount=5, encoding="utf-8"
-)
-file_handler.setFormatter(formatter)
-
-stream_handler = logging.StreamHandler()
-stream_handler.setFormatter(formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)

@@ -2,38 +2,36 @@
 import os
 from contextlib import asynccontextmanager
 from pathlib import Path
+import logging
 
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.orm import sessionmaker
 
-from .api.routes.tracker import tracker_router
-from .db.database import engine, database_router
-from .api.routes import auth_router, clients_router, food_router
+from .db.database import database_router
+from .api.routes import auth_router, articles_router
 from .core import settings
 from .core.config import logger
+from .api.routes.blog import router as blog_router
+from .db.mongodb import mongodb
 
-RUNNING_TESTS = os.getenv("RUNNING_TESTS", "false").lower() == "true"
-
-# Создаём фабрику сессий
-async_session = sessionmaker(
-    engine, class_=AsyncSession, expire_on_commit=False, future=True
-)
-
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting up application...")
+    await startup_db_client()
     yield
     logger.info("Shutting down application...")
-
+    await shutdown_db_client()
 
 app = FastAPI(
-    title="MyApi",
-    description="GymHelper",
+    title="Blog Platform API",
+    description="API для платформы блогов",
+    version="1.0.0",
     docs_url="/docs",
     openapi_url="/openapi.json",
     swagger_ui_parameters={
@@ -73,40 +71,24 @@ app = FastAPI(
     },
 )
 
-
-BASE_DIR = (
-    Path(__file__).resolve().parent.parent.parent
-)  # Поднимаемся на три уровня выше: backend/src -> gymhepler
-STATIC_DIR = BASE_DIR / "static"
-
-# Монтируем директорию static
+# Настраиваем статические файлы
+STATIC_DIR = Path(__file__).resolve().parent.parent.parent / "static"
+STATIC_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
-# Подключаем маршруты напрямую
-app.include_router(auth_router)
-app.include_router(clients_router)
 
-app.include_router(food_router)
+# Подключаем основные роутеры
+app.include_router(database_router)
+app.include_router(auth_router, prefix=settings.API_V1_STR, tags=["Authentication"])
+app.include_router(articles_router, prefix=settings.API_V1_STR, tags=["Articles"])
 
-app.include_router(tracker_router)
-
-origins = [
-    "http://localhost:5173",
-    "http://localhost:80",
-    "http://localhost:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:5173",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:8000",
-]
-
+# Настраиваем CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=settings.CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # Добавляем обработку ошибок
 @app.exception_handler(Exception)
@@ -117,13 +99,16 @@ async def global_exception_handler(request: Request, exc: Exception):
         content={"detail": "Internal server error"},
     )
 
+@app.on_event("startup")
+async def startup_db_client():
+    """Подключение к MongoDB Atlas при запуске приложения"""
+    await mongodb.connect_to_mongodb()
 
-app.include_router(database_router)
-logger.info("Auth router included with routes: %s", database_router.routes)
-app.include_router(auth_router)
-logger.info("Auth router included with routes: %s", auth_router.routes)
-app.include_router(clients_router)
-logger.info("Clients router included with routes: %s", clients_router.routes)
+@app.on_event("shutdown")
+async def shutdown_db_client():
+    """Закрытие подключения к MongoDB Atlas при остановке приложения"""
+    await mongodb.close_mongodb_connection()
 
-app.include_router(food_router)
-logger.info("Food router included with routes: %s", food_router.routes)
+@app.get("/")
+async def root():
+    return {"message": "Welcome to Blog Platform API"}

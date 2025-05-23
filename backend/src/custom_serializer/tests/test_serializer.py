@@ -1,7 +1,8 @@
 import pytest
 import os
-from custom_serializer.formats.json_serializer import JsonSerializer
-from custom_serializer.formats.customtext_serializer import CustomTextSerializer
+# Adjust imports to absolute paths from the project root
+from backend.src.custom_serializer.formats.json_serializer import JsonSerializer
+
 
 @pytest.fixture
 def cleanup():
@@ -17,14 +18,3 @@ def test_json_serializer(cleanup):
     loaded_data = serializer.load_from_file("test.json")
     assert loaded_data == data
 
-def test_customtext_serializer(cleanup):
-    serializer = CustomTextSerializer()
-    data = {"name": "Milk", "calories": "60"}
-    serializer.save_to_file(data, "test.txt")
-    loaded_data = serializer.load_from_file("test.txt")
-    assert loaded_data == data
-
-def test_invalid_customtext_data():
-    serializer = CustomTextSerializer()
-    with pytest.raises(ValueError):
-        serializer.serialize([1, 2, 3], "test.txt")
