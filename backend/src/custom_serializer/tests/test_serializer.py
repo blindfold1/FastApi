@@ -1,7 +1,6 @@
 import pytest
 import os
-# Adjust imports to absolute paths from the project root
-from backend.src.custom_serializer.formats.json_serializer import JsonSerializer
+from ..formats.json_serializer import JsonSerializer
 
 
 @pytest.fixture

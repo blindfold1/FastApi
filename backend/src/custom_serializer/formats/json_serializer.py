@@ -1,4 +1,4 @@
-from src.custom_serializer.serializer.serializer import Serializer
+from ..serializer.serializer import Serializer
 
 class JsonSerializer(Serializer):
     def serialize(self, data, filepath):
