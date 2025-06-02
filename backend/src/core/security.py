@@ -9,7 +9,7 @@ from ..core.config import settings
 # Настройка хеширования паролей
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/users/login")
 
 class AuthHandler:
     def __init__(self):
@@ -63,7 +63,7 @@ class AuthHandler:
         except JWTError:
             raise credentials_exception
 
-        user = await db.users_collection.find_one({"username": username})
+        user = await db.users.find_one({"username": username})
         if user is None:
             raise credentials_exception
         if not user.get("is_active", True):

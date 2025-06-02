@@ -15,7 +15,7 @@ SwaggerUIBundle({
     window.ui.authActions.authorize = async (auth) => {
       const result = await originalAuthorize(auth);
       if (auth["AccessToken"]) {
-        const response = await fetch('http://localhost:8000/auth/token', {
+        const response = await fetch('http://localhost:8000/api/users/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',

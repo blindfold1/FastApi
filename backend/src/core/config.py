@@ -5,13 +5,13 @@ from typing import Optional
 
 class Settings(BaseSettings):
     # Base
-    PROJECT_NAME: str = "Blog API"
+    PROJECT_NAME: str = "Fitness Trainers API"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
     
-    # MongoDB Atlas settings
-    MONGODB_URL: str = "mongodb+srv://kirill:3103@cluster0.4kamcli.mongodb.net/blog_platform?retryWrites=true&w=majority"
-    MONGODB_DB_NAME: str = "blog_platform"
+    # MongoDB settings
+    MONGODB_URL: str = "mongodb://localhost:27017"
+    MONGODB_DB_NAME: str = "fitness_trainers"
     
     # JWT settings
     SECRET_KEY: str = "your-secret-key-here"  # В продакшене использовать безопасный ключ

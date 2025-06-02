@@ -1,70 +1,54 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { Form, Button, Alert, Card } from 'react-bootstrap';
+import api from '../api';
 
 const LoginForm = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Проверка на пустые поля после удаления пробелов
-    const trimmedUsername = username.trim();
-    const trimmedPassword = password.trim();
-    if (!trimmedUsername || !trimmedPassword) {
-      setError('Username and password are required');
-      return;
-    }
-
+    setError('');
+    setLoading(true);
     try {
-      const formData = new URLSearchParams();
-      formData.append('username', trimmedUsername);
-      formData.append('password', trimmedPassword);
-
-      console.log('Sending login request to /auth/token with data:', formData.toString());
-
-      const response = await axios.post('http://127.0.0.1:8000/auth/token', formData, {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
+      const params = new URLSearchParams();
+      params.append('username', username);
+      params.append('password', password);
+      const res = await api.post('/users/login', params, {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       });
-
-      console.log('Login response:', response.data);
-      localStorage.setItem('access_token', response.data.access_token);
-      localStorage.setItem('refresh_token', response.data.refresh_token);
-      setError('');
-      onLogin(true);
+      localStorage.setItem('token', res.data.access_token);
+      localStorage.setItem('role', res.data.role);
+      if (onLogin) onLogin();
     } catch (err) {
-      const errorMessage = err.response?.data?.detail || err.message || 'Unknown error';
-      console.error('Login error:', err.response?.data || err);
-      setError(`Login failed: ${errorMessage}`);
-      onLogin(false);
+      setError(err.response?.data?.detail || 'Ошибка входа');
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      {error && <p className="error">{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="Username"
-          required
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <Card className="mx-auto" style={{ maxWidth: 400, marginTop: 60 }}>
+      <Card.Body>
+        <h3 className="mb-4 text-center">Вход</h3>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <Form onSubmit={handleSubmit} autoComplete="off">
+          <Form.Group className="mb-3">
+            <Form.Label>Имя пользователя</Form.Label>
+            <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} required autoFocus />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Пароль</Form.Label>
+            <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          </Form.Group>
+          <Button type="submit" variant="primary" className="w-100" disabled={loading}>
+            {loading ? 'Вход...' : 'Войти'}
+          </Button>
+        </Form>
+      </Card.Body>
+    </Card>
   );
 };
 
